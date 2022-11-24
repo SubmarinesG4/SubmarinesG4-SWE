@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.4)  24 NOV 2022 13:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.22)  24 NOV 2022 19:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/samuel/Desktop/SubmarinesG4-SWE/RTB/Documenti esterni/piano_di_progetto/piano_di_progetto.tex"
-(/Users/samuel/Desktop/SubmarinesG4-SWE/RTB/Documenti esterni/piano_di_progetto/piano_di_progetto.tex
+**"/Users/nccfsl/Desktop/UNI/SWE/SubmarinesG4-SWE/RTB/Documenti esterni/piano_di_progetto/piano_di_progetto.tex"
+(/Users/nccfsl/Desktop/UNI/SWE/SubmarinesG4-SWE/RTB/Documenti esterni/piano_di_progetto/piano_di_progetto.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24> (../template/source/packages.tex (/usr/local/texlive/2022/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -914,12 +914,12 @@ Package rerunfilecheck Info: File `piano_di_progetto.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  32695 strings out of 478268
- 619570 string characters out of 5846348
+ 619594 string characters out of 5846346
  960821 words of memory out of 5000000
  50296 multiletter control sequences out of 15000+600000
  473931 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 120i,15n,121p,1264b,417s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 120i,15n,121p,1272b,417s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
 Output written on piano_di_progetto.pdf (6 pages, 134289 bytes).
 PDF statistics:

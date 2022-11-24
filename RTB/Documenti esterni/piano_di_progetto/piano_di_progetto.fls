@@ -1,8 +1,8 @@
-PWD /Users/samuel/Desktop/SubmarinesG4-SWE/RTB/Documenti esterni/piano_di_progetto
+PWD /Users/nccfsl/Desktop/UNI/SWE/SubmarinesG4-SWE/RTB/Documenti esterni/piano_di_progetto
 INPUT /usr/local/texlive/2022/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/samuel/Desktop/SubmarinesG4-SWE/RTB/Documenti esterni/piano_di_progetto/piano_di_progetto.tex
+INPUT /Users/nccfsl/Desktop/UNI/SWE/SubmarinesG4-SWE/RTB/Documenti esterni/piano_di_progetto/piano_di_progetto.tex
 OUTPUT piano_di_progetto.log
 INPUT ../template/source/packages.tex
 INPUT ../template/source/packages.tex
