@@ -7,6 +7,16 @@
 .AppleDouble
 .LSOverride
 
+#LaTeX
+.aux
+.fdb_latexmk
+.fls
+.lof
+.lot
+.out
+.synctex.gz
+.toc
+
 # Icon must end with two \r
 Icon
 
