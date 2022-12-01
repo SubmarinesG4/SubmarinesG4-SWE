@@ -8,17 +8,62 @@
 \contentsline {section}{\numberline {2}Descrizione generale del prodotto}{1}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Scopo del prodotto}{1}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Target}{1}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Attori}{2}{subsection.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.1}Attori principali}{2}{subsubsection.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.2}Attori secondari}{2}{subsubsection.2.3.2}%
-\contentsline {section}{\numberline {3}Obblighi progettuali}{2}{section.3}%
-\contentsline {section}{\numberline {4}Casi d'uso}{2}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Scopo}{2}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}UC1-Test}{2}{subsection.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}UC1.1-Test}{2}{subsubsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.3}UC2-Test}{2}{subsection.4.3}%
-\contentsline {section}{\numberline {5}Requisiti}{2}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Requisiti di vincolo}{2}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Requisiti di qualità}{2}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Requisiti funzionali}{2}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Tracciamento requisiti}{2}{subsection.5.4}%
+\contentsline {subsection}{\numberline {2.3}Attori}{1}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Attori principali}{1}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Attori secondari}{1}{subsubsection.2.3.2}%
+\contentsline {section}{\numberline {3}Obblighi progettuali}{1}{section.3}%
+\contentsline {section}{\numberline {4}Casi d'uso}{1}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Scopo}{1}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}UC 1 - Accesso}{2}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}UC 1.1 - Prima autenticazione}{2}{subsubsection.4.2.1}%
+\contentsline {paragraph}{\numberline {4.2.1.1}UC 1.1.1 - Cambio password obbligatorio}{2}{paragraph.4.2.1.1}%
+\contentsline {paragraph}{\numberline {4.2.1.2}UC 1.1.2 - Inserimento indirizzo email obbligatorio}{2}{paragraph.4.2.1.2}%
+\contentsline {paragraph}{\numberline {4.2.1.3}UC 1.1.3 - Inserire dati personali}{2}{paragraph.4.2.1.3}%
+\contentsline {subsubsection}{\numberline {4.2.2}UC 1.2 - Autenticazione generica}{2}{subsubsection.4.2.2}%
+\contentsline {paragraph}{\numberline {4.2.2.1}UC 1.2.1 - Inserimento indirizzo email}{2}{paragraph.4.2.2.1}%
+\contentsline {paragraph}{\numberline {4.2.2.2}UC 1.2.2 - Inserimento password}{2}{paragraph.4.2.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}UC 1.3 - Password dimenticata}{2}{subsubsection.4.2.3}%
+\contentsline {paragraph}{\numberline {4.2.3.1}UC 1.3.1 - Inserimento indirizzo email per recupero}{2}{paragraph.4.2.3.1}%
+\contentsline {paragraph}{\numberline {4.2.3.2}UC 1.3.2 - Inserimento nuova password}{2}{paragraph.4.2.3.2}%
+\contentsline {paragraph}{\numberline {4.2.3.3}UC 1.3.3 - Conferma password}{2}{paragraph.4.2.3.3}%
+\contentsline {subsection}{\numberline {4.3}UC 2 - Logout}{2}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}UC 3 - Cambio password}{2}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}UC 3.1 - Inserimento password vecchia}{2}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}UC 3.2 - Inserimento password nuova}{2}{subsubsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.3}UC 3.3 - Conferma password}{2}{subsubsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.5}UC 4 - Inserimento traduzione}{2}{subsection.4.5}%
+\contentsline {subsubsection}{\numberline {4.5.1}UC 4.1 - Inserimento lingua da tradurre}{2}{subsubsection.4.5.1}%
+\contentsline {subsubsection}{\numberline {4.5.2}UC 4.2 - Inserimento lingua tradotta}{2}{subsubsection.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.5.3}UC 4.3 - Inserimento espressione lingua da tradurre}{2}{subsubsection.4.5.3}%
+\contentsline {subsubsection}{\numberline {4.5.4}UC 4.4 - Inserimento espressione lingua tradotta}{2}{subsubsection.4.5.4}%
+\contentsline {subsection}{\numberline {4.6}UC 5 - Revisione traduzione}{2}{subsection.4.6}%
+\contentsline {subsubsection}{\numberline {4.6.1}UC 5.1 - Approvazione}{2}{subsubsection.4.6.1}%
+\contentsline {subsubsection}{\numberline {4.6.2}UC 5.2 - Eliminazione}{2}{subsubsection.4.6.2}%
+\contentsline {subsection}{\numberline {4.7}UC 6 - Modifica traduzione}{2}{subsection.4.7}%
+\contentsline {subsubsection}{\numberline {4.7.1}UC 6.1 - Modifica lingua da tradurre}{3}{subsubsection.4.7.1}%
+\contentsline {subsubsection}{\numberline {4.7.2}UC 6.2 - Modifica lingua tradotta}{3}{subsubsection.4.7.2}%
+\contentsline {subsubsection}{\numberline {4.7.3}UC 6.3 - Modifica espressione lingua da tradurre}{3}{subsubsection.4.7.3}%
+\contentsline {subsubsection}{\numberline {4.7.4}UC 6.4 - Modifica espressione lingua tradotta}{3}{subsubsection.4.7.4}%
+\contentsline {subsection}{\numberline {4.8}UC 7 - Elimina traduzione}{3}{subsection.4.8}%
+\contentsline {subsection}{\numberline {4.9}UC 8 - Ricerca}{3}{subsection.4.9}%
+\contentsline {subsubsection}{\numberline {4.9.1}UC 8.1 - Ricerca tramite parola}{3}{subsubsection.4.9.1}%
+\contentsline {paragraph}{\numberline {4.9.1.1}UC 8.1.1 - Inserimento parola}{3}{paragraph.4.9.1.1}%
+\contentsline {subsubsection}{\numberline {4.9.2}UC 8.2 - Ricerca tramite id univoco}{3}{subsubsection.4.9.2}%
+\contentsline {paragraph}{\numberline {4.9.2.1}UC 8.2.1 - Inserimento id}{3}{paragraph.4.9.2.1}%
+\contentsline {subsubsection}{\numberline {4.9.3}UC 9 - Filtraggio ricerca}{3}{subsubsection.4.9.3}%
+\contentsline {subsubsection}{\numberline {4.9.4}UC 9.1 - Filtraggio per lingua da tradurre}{3}{subsubsection.4.9.4}%
+\contentsline {subsubsection}{\numberline {4.9.5}UC 9.2 - Filtraggio per lingua tradotta}{3}{subsubsection.4.9.5}%
+\contentsline {subsubsection}{\numberline {4.9.6}UC 9.3 - Filtraggio per data di creazione}{3}{subsubsection.4.9.6}%
+\contentsline {subsubsection}{\numberline {4.9.7}UC 9.4 - Filtraggio per utente traduttore}{3}{subsubsection.4.9.7}%
+\contentsline {subsubsection}{\numberline {4.9.8}UC 9.5 - Filtraggio per approvazione}{3}{subsubsection.4.9.8}%
+\contentsline {subsubsection}{\numberline {4.9.9}UC 9.6 - Filtraggio per pubblicazione}{3}{subsubsection.4.9.9}%
+\contentsline {subsection}{\numberline {4.10}UC 10 - Pubblicazione di una traduzione}{3}{subsection.4.10}%
+\contentsline {subsection}{\numberline {4.11}UC 11 - Aggiunta cliente}{3}{subsection.4.11}%
+\contentsline {subsubsection}{\numberline {4.11.1}UC 11.1 - Inserimento nome cliente}{3}{subsubsection.4.11.1}%
+\contentsline {subsubsection}{\numberline {4.11.2}UC 11.2 - Inserimento numero traduzioni disponibili}{3}{subsubsection.4.11.2}%
+\contentsline {subsection}{\numberline {4.12}UC 12 - Eliminazione cliente}{3}{subsection.4.12}%
+\contentsline {section}{\numberline {5}Requisiti}{3}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Requisiti di vincolo}{3}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Requisiti di qualità}{3}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Requisiti funzionali}{3}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Tracciamento requisiti}{3}{subsection.5.4}%
