@@ -109,19 +109,121 @@ Flusso di eventi: UC6.1 UC6.2 UC6.3 UC6.4   %! Eventualmente togliere il modific
 \subsection*{UC 7 - Elimina traduzione} %! Eliminazione di più traduzioni?
 Flusso di eventi: utente schiaccia elimina, utente schiaccia conferma elimina
 \subsection*{UC 8 - Ricerca}
+    \begin{itemize}
+        \item Attore primario: utente traduttore, utente admin, utente super admin(zero12).
+        \item Precondizione: l'utente ha necessità di recercare una traduzione.
+        \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano la query inserita.
+        \item Estensione: l'utente deve inserire o una parola o un id collegato ad una traduzione
+    \end{itemize}
     \subsubsection*{UC 8.1 - Ricerca tramite parola}
+        \begin{itemize}
+            \item Attore primario: utente traduttore, utente admin, utente super admin(zero12).
+            \item Precondizione: l'utente ha necessità di recercare una traduzione per parola.
+            \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano la parola inserita.
+            \item Flusso: Inserimento parola [8.1.1]
+        \end{itemize}
         \paragraph*{UC 8.1.1 - Inserimento parola}
+            \begin{itemize}
+                \item Attore primario: utente traduttore, utente admin, utente super admin(zero12).
+                \item Precondizione: l'utente ha necessità di inserire una parola per recercare una traduzione.
+                \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano la parola inserita.
+                \item Estensione: l'utente deve inserire la parola
+            \end{itemize}
     \subsubsection*{UC 8.2 - Ricerca tramite id univoco}
+        \begin{itemize}
+            \item Attore primario: utente traduttore, utente admin, utente super admin(zero12).
+            \item Precondizione: l'utente ha necessità di recercare una traduzione per id univoco della traduzione.
+            \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano l' id inserito.
+            \item Flusso: Inserimento parola [8.2.1]
+        \end{itemize}
         \paragraph*{UC 8.2.1 - Inserimento id}
+            \begin{itemize}
+                \item Attore primario: utente traduttore, utente admin, utente super admin(zero12).
+                \item Precondizione: l'utente ha necessità di inserire un id per recercare una traduzione.
+                \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano l'id inserito.
+                \item Estensione: l'utente deve inserire la parola
+            \end{itemize}
 \subsubsection*{UC 9 - Filtraggio ricerca}
+    \begin{itemize}
+        \item Attore primario: utente traduttore, utente admin, utente super admin(zero12).
+        \item Precondizione: l'utente ha necessità di filtrare la ricerca effetuata.
+        \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano i filtri inseriti.
+        \item Estensione: l'utente deve selezionare uno tra i seguenti filtri: lingua da tradurre, lingua tradotta, data creazione, utente traduttore, approvazione, pubblicazione  ????
+    \end{itemize}
     \subsubsection*{UC 9.1 - Filtraggio per lingua da tradurre}
+        \begin{itemize}
+            \item Attore primario: utente traduttore, utente admin, utente super admin(zero12).
+            \item Precondizione: l'utente ha necessità di filtrare la ricerca effetuata per la lingua da tradurre.
+            \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano la lingua selezionata precedentemente. 
+            \item Estensione: l'utente deve selezionare la lingua da tradurre per eseguire la ricerca filtrata.
+        \end{itemize}        
     \subsubsection*{UC 9.2 - Filtraggio per lingua tradotta}
+        \begin{itemize}
+            \item Attore primario: utente traduttore, utente admin, utente super admin(zero12).
+            \item Precondizione: l'utente ha necessità di filtrare la ricerca effetuata per la lingua tradotta.
+            \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano la lingua selezionata precedentemente. 
+            \item Estensione: l'utente deve selezionare la lingua tradotta per eseguire la ricerca filtrata.
+        \end{itemize}        
     \subsubsection*{UC 9.3 - Filtraggio per data di creazione}
+        \begin{itemize}
+            \item Attore primario: utente traduttore, utente admin, utente super admin(zero12).
+            \item Precondizione: l'utente ha necessità di filtrare la ricerca effetuata per la data di creazione.
+            \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano la data di creazione precedentemente selezionata. 
+            \item Estensione: l'utente deve selezionare la data di creazione per eseguire la ricerca filtrata.
+        \end{itemize}       
     \subsubsection*{UC 9.4 - Filtraggio per utente traduttore}
+        \begin{itemize}
+            \item Attore primario: utente traduttore, utente admin, utente super admin(zero12).
+            \item Precondizione: l'utente ha necessità di filtrare la ricerca effetuata per utente traduttore.
+            \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano l'utente traduttore precedentemente selezionato. 
+            \item Estensione: l'utente deve selezionare l'utente traduttore per eseguire la ricerca filtrata.
+        \end{itemize}  
     \subsubsection*{UC 9.5 - Filtraggio per approvazione}
+        \begin{itemize}
+            \item Attore primario: utente traduttore, utente admin, utente super admin(zero12).
+            \item Precondizione: l'utente ha necessità di filtrare la ricerca effetuata per approvazione.
+            \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano l'approvazione precedentemente selezionata. 
+            \item Estensione: l'utente deve selezionare l'approvazione per eseguire la ricerca filtrata.
+        \end{itemize}  
     \subsubsection*{UC 9.6 - Filtraggio per pubblicazione}
+        \begin{itemize}
+            \item Attore primario: utente traduttore, utente admin, utente super admin(zero12).
+            \item Precondizione: l'utente ha necessità di filtrare la ricerca effetuata per pubblicazione.
+            \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano la pubblicazione precedentemente selezionata. 
+            \item Estensione: l'utente deve selezionare la pubblicazione per eseguire la ricerca filtrata.
+        \end{itemize} 
 \subsection*{UC 10 - Pubblicazione di una traduzione} %! Pubblicazione di più traduzioni?
 \subsection*{UC 11 - Aggiunta cliente}
+    \begin{itemize}
+        \item Attore primario: utente super admin(zero12).
+        \item Precondizione: l'utente ha necessità di aggiungere un nuovo cliente.
+        \item Postcondizione: l'utente ha aggiunto il cliente.
+        \item Estensione: l'utente deve inserire obbligatoriamente il nome del cliente valido(presente nella lista dei clienti) altrimenti viene visualizzato un messaggio d'errore.
+        \item Flusso di eventi:
+        \begin{enumerate}
+            \item L'utente inserisce il nome del nuovo cliente [UC 11.1].
+            \item L'utente inserisce il numero di traduzioni disponibili [UC 11.2].
+        \end{enumerate}
+    \end{itemize}
     \subsubsection*{UC 11.1 - Inserimento nome cliente}
+        \begin{itemize}
+            \item Attore primario: utente super admin(zero12).
+            \item Precondizione: l'utente ha necessità di inserire un cliente, la procedura di inserimento richiede il nome dell'azienda.
+            \item Postcondizione: l'utente ha eliminato il cliente.
+            \item Estensione: l'utente deve inserire obbligatoriamente il nome del cliente valido(presente nella lista dei clienti) altrimenti viene visualizzato un messaggio d'errore.
+        \end{itemize}
     \subsubsection*{UC 11.2 - Inserimento numero traduzioni disponibili}
+        \begin{itemize}
+            \item Attore primario: utente super admin(zero12).
+            \item Precondizione: l'utente ha necessità di inserire il numero delle traduzioni disponibili(si chiede una fatturazione per lo spazio su disco richiesto per salvare il numero di traduzioni richieste).
+            \item Postcondizione: l'utente ha inserito il numero delle traduzioni.
+            \item Estensione: ??
+        \end{itemize}
 \subsection*{UC 12 - Eliminazione cliente}
+    \begin{itemize}
+        \item Attore primario: utente super admin(zero12).
+        \item Precondizione: l'utente ha necessità di eliminare un cliente.
+        \item Postcondizione: l'utente ha eliminato il cliente.
+        \item Estensione: l'utente deve inserire obbligatoriamente il nome del cliente valido(presente nella lista dei clienti) altrimenti viene visualizzato un messaggio d'errore.
+    \end{itemize}
+
