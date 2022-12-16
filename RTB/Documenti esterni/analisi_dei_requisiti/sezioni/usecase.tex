@@ -1,59 +1,237 @@
 \section{Casi d'uso}
 \subsection{Scopo}
 In questa sezione verranno presentati gli use cases tracciati, che il software dovrà implementare.
-\subsection*{UC 1 - Accesso}
-    \subsubsection*{UC 1.1 - Prima autenticazione}
-    Flusso di eventi: UC1.1.1
-        \paragraph*{UC 1.1.1 - Cambio password obbligatorio}
-        \paragraph*{UC 1.1.2 - Inserimento indirizzo email obbligatorio}
-        \paragraph*{UC 1.1.3 - Inserire dati personali}
-    \subsubsection*{UC 1.2 - Autenticazione generica}
-        \paragraph*{UC 1.2.1 - Inserimento indirizzo email}
-        \paragraph*{UC 1.2.2 - Inserimento password}
-    \subsubsection*{UC 1.3 - Password dimenticata}
-    Flusso di eventi: UC1.3.1 UC1.3.2 UC1.3.3
-        \paragraph*{UC 1.3.1 - Inserimento indirizzo email per recupero}
-        \paragraph*{UC 1.3.2 - Inserimento nuova password}
-        \paragraph*{UC 1.3.3 - Conferma password}
-\subsection*{UC 2 - Logout} %! Mettere area personale come user case?
-\subsection*{UC 3 - Cambio password}
+\subsection{UC 1 - Accesso}
     \begin{itemize}
-        \item Attore primario: utente autenticato qualsiasi.
-        \item Precondizione: l'utente vuole cambiare la propria password.
-        \item Postcondizione: l'utente ha cambiato password.
-        \item Scenario principale: la password dell'utente in seguito a eventi esterni non è più sicura.
-        \item Flusso di eventi:
-            \begin{enumerate}
-                \item L'utente inserisce la vecchia password per riconfermare la sua identità [UC 3.1].
-                \item L'utente inserisce la nuova password [UC 3.2].
-                \item Per sicurezza il sistema chiede il reinserimento della nuova password [UC 3.3].
-            \end{enumerate}
+        \item Attore primario: utente non autenticato.
+        \item Precondizione: l'utente non è autenticato.
+        \item Postcondizione: l'utente si registra [UC 1.1] o se è già in possesso delle credenziali effettua l'autenticazione [UC 1.2].
+        \item Scenario principale: se l'utente non ha ancora un account dev'essere in possesso di un link di registrazione fornito dall'admin del proprio gruppo [UC 1.1], altrimenti può autenticarsi [UC 1.2].
+        \item Scenario alternativo: l'utente già in possesso di un account ha scordato la password e ha bisogno di cambiarla in modo da poter accedere di nuovo [UC 1.3].
     \end{itemize}
-    \subsubsection*{UC 3.1 - Inserimento password vecchia}
+    \subsubsection{UC 1.1 - Registrazione}
         \begin{itemize}
-            \item Attore primario: utente autenticato qualsiasi.
-            \item Precondizione: l'utente ha necessità di cambiare password.
-            \item Postcondizione: l'utente ha inserito la vecchia password.
-            \item Scenario principale: inserimento vecchia password per modificarla.
-            \item Estensione: se la password è sbagliata quando viene premuto il tasto "Conferma" viene visualizzato un messaggio d'errore e non viene effettuato il cambio password.
+            \item Attore primario: utente non autenticato.
+            \item Precondizione: l'utente non è registrato.
+            \item Postcondizione: l'utente è registrato.
+            \item Scenario principale: l'utente ha ricevuto una mail dall'admin del proprio gruppo per potersi e registrare e ha necessità di registrarsi.
+            \item Flusso di eventi:
+                \begin{enumerate}
+                    \item L'utente inserisce il suo indirizzo email [UC 1.1.1].
+                    \item L'utente inserisce il suo cognome [UC 1.1.2].
+                    \item L'utente inserisce il suo nome [UC 1.1.3].
+                    \item L'utente inserisce una password [UC 1.1.4].
+                    \item L'utente reinserisce la password [UC 1.1.5].
+                \end{enumerate}
         \end{itemize}
-    \subsubsection*{UC 3.2 - Inserimento password nuova}
+        \paragraph{UC 1.1.1 - Inserimento indirizzo email}
+            \begin{itemize}
+                \item Attore primario: utente non autenticato.
+                \item Precondizione: l'utente non è registrato.
+                \item Postcondizione: l'utente ha inserito l'indirizzo email.
+                \item Scenario principale: l'utente inserisce l'indirizzo email per effettuare la registrazione.
+                \item Estensioni:
+                    \begin{itemize}
+                        \item Se l'indirizzo email è già stato inserito viene visualizzato un messaggio d'errore e la registrazione non viene eseguita.
+                    \end{itemize}
+            \end{itemize}
+        \paragraph{UC 1.1.2 - Inserimento cognome}
+            \begin{itemize}
+                \item Attore primario: utente non autenticato.
+                \item Precondizione: l'utente non è registrato.
+                \item Postcondizione: l'utente ha inserito il cognome.
+                \item Scenario principale: l'utente inserisce il cognome per effettuare la registrazione.
+                \item Estensioni:
+                    \begin{itemize}
+                        \item Se il cognome risulta una stringa vuota viene visualizzato un messaggio d'errore e la registrazione non viene eseguita.
+                    \end{itemize}
+            \end{itemize}
+        \paragraph{UC 1.1.3 - Inserire nome}
+            \begin{itemize}
+                \item Attore primario: utente non autenticato.
+                \item Precondizione: l'utente non è registrato.
+                \item Postcondizione: l'utente ha inserito il nome.
+                \item Scenario principale: l'utente inserisce il nome per effettuare la registrazione.
+                \item Estensioni:
+                    \begin{itemize}
+                        \item Se il nome risulta una stringa vuota viene visualizzato un messaggio d'errore e la registrazione non viene eseguita.
+                    \end{itemize}
+            \end{itemize}
+        \paragraph{UC 1.1.4 - Inserimento password}
+            \begin{itemize}
+                \item Attore primario: utente non autenticato.
+                \item Precondizione: l'utente non è registrato.
+                \item Postcondizione: l'utente ha inserito una password.
+                \item Scenario principale: l'utente inserisce una password per effettuare la registrazione.
+                \item Estensioni:
+                    \begin{itemize}
+                        \item Se la password non risulta conforme agli standard di sicurezza viene visualizzato un messaggio d'errore e la registrazione non viene eseguita.
+                    \end{itemize}
+            \end{itemize}
+        \paragraph{UC 1.1.5 - Reinserimento password}
+            \begin{itemize}
+                \item Attore primario: utente non autenticato.
+                \item Precondizione: l'utente non è registrato.
+                \item Postcondizione: l'utente ha reinserito la password.
+                \item Scenario principale: l'utente reinserisce la password inserita in [UC 1.1.4] per effettuare la registrazione.
+                \item Estensioni:
+                    \begin{itemize}
+                        \item Se la password non è uguale a quella inserita in [UC 1.1.4] viene visualizzato un messaggio d'errore e la registrazione non viene eseguita.
+                    \end{itemize}
+            \end{itemize}
+    \subsubsection{UC 1.2 - Autenticazione}
         \begin{itemize}
-            \item Attore primario: utente autenticato qualsiasi.
-            \item Precondizione: l'utente ha necessità di cambiare password ed ha inserito la vecchia password.
-            \item Postcondizione: l'utente non autenticato ha inserito la nuova password.
-            \item Scenario principale: inserimento nuova password.
-            \item Estensione: se la nuova password inserita non rispetta gli standard necessari viene visualizzato un messaggio d'errore e non viene effettuato il cambio password.
+            \item Attore primario: utente non autenticato.
+            \item Precondizione: l'utente non è autenticato.
+            \item Postcondizione: l'utente è autenticato.
+            \item Scenario principale: l'utente inserisce email e password e accede al sistema autenticandosi.
+            \item Scenario alternativo: l'utente inserisce una coppia email-password non presente nel sistema.
+            \item Flusso di eventi:
+                \begin{enumerate}
+                    \item L'utente inserisce il suo indirizzo email [UC 1.2.1].
+                    \item L'utente inserisce la sua password [UC 1.2.2].
+                \end{enumerate}
+            \item Estensioni:
+                \begin{itemize}
+                    \item se la coppia email-password non è presente nel sistema l'autenticazione fallisce e viene visualizzato un messaggio d'errore.
+                \end{itemize}
         \end{itemize}
-    \subsubsection*{UC 3.3 - Conferma password}
+        \paragraph{UC 1.2.1 - Inserimento indirizzo email}
+            \begin{itemize}
+                \item Attore primario: utente non autenticato.
+                \item Precondizione: l'utente non è autenticato.
+                \item Postcondizione: l'utente ha inserito l'indirizzo email.
+                \item Scenario principale: l'utente inserisce l'indirizzo email per autenticarsi.
+            \end{itemize}
+        \paragraph{UC 1.2.2 - Inserimento password}
+            \begin{itemize}
+                \item Attore primario: utente non autenticato.
+                \item Precondizione: l'utente non è autenticato.
+                \item Postcondizione: l'utente ha inserito la password.
+                \item Scenario principale: l'utente inserisce la password per autenticarsi.
+            \end{itemize}
+    \subsubsection{UC 1.3 - Password dimenticata}
         \begin{itemize}
-            \item Attore primario: utente autenticato qualsiasi.
-            \item Precondizione: l'utente ha necessità di cambiare password ed ha inserito la vecchia e la nuova password.
-            \item Postcondizione: l'utente non autenticato ha inserito di nuovo la nuova password.
-            \item Scenario principale: conferma nuova password per evitare errori.
-            \item Estensione: se la password non corrisponde a quella inserita sopra viene visualizzato un messaggio d'errore e non viene effettuato il cambio password.
+            \item Attore primario: utente non autenticato.
+            \item Precondizione: l'utente non è autenticato.
+            \item Postcondizione: l'utente ha cambiato la password.
+            \item Scenario principale: l'utente ha dimenticato la password e fa richiesta per cambiarla.
+            \item Flusso di eventi:
+                \begin{enumerate}
+                    \item L'utente inserisce l'indirizzo email del proprio account.
+                    \item Il sistema invia un email all'indirizzo inserito con il link alla pagina per il cambio della password.
+                    \item L'utente inserisce una nuova password.
+                    \item L'utente reinserisce la nuova password per confermarla.
+                \end{enumerate}
+            \item Estensioni:
+                \begin{itemize}
+                    \item Se l'utente inserisce un'indirizzo email non presente nel sistema non riceverà nessuna email.
+                \end{itemize}
         \end{itemize}
-\subsection*{UC 4 - Inserimento traduzione}
+        \paragraph{UC 1.3.1 - Inserimento indirizzo email per il reset}
+            \begin{itemize}
+                \item Attore primario: utente non autenticato.
+                \item Precondizione: l'utente non è autenticato.
+                \item Postcondizione: l'utente ha inserito l'indirizzo email per il reset.
+                \item Scenario principale: l'utente inserisce l'indirizzo email per farsi mandare il link di cambio password.
+            \end{itemize}
+        \paragraph{UC 1.3.2 - Inserimento nuova password}
+            \begin{itemize}
+                \item Attore primario: utente non autenticato.
+                \item Precondizione: l'utente non è autenticato.
+                \item Postcondizione: l'utente ha inserito la password.
+                \item Scenario principale: l'utente inserisce la password nella pagina corrispondente al link arrivato via mail.
+                \item Estensioni:
+                        \begin{itemize}
+                            \item Se la password non risulta conforme agli standard di sicurezza viene visualizzato un messaggio d'errore e il reset non viene eseguito.
+                        \end{itemize}
+            \end{itemize}
+        \paragraph{UC 1.3.3 - Reinserimento password}
+            \begin{itemize}
+                \item Attore primario: utente non autenticato.
+                \item Precondizione: l'utente non è autenticato.
+                \item Postcondizione: l'utente ha reinserito la password.
+                \item Scenario principale: l'utente reinserisce la password nella pagina corrispondente al link arrivato via mail.
+                \item Estensioni:
+                        \begin{itemize}
+                            \item Se la password non è uguale a quella inserita in [UC 1.3.2] viene visualizzato un messaggio d'errore e il reset non viene eseguito.
+                        \end{itemize}
+            \end{itemize}
+
+\subsection{UC 2 - Area personale}
+    \begin{itemize}
+        \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
+        \item Precondizione: l'utente è autenticato.
+        \item Postcondizione: l'utente accede alla propria area personale.
+        \item Scenario principale: l'utente accede alla sua area personale per gestire il proprio profilo.
+        \item Sottocasi:
+            \begin{itemize}
+                \item L'utente vuole uscire dal proprio account [UC 2.1].
+                \item L'utente vuole cambiare la propria password [UC 2.2].
+            \end{itemize}
+    \end{itemize}
+    \subsubsection{UC 2.1 - Logout}
+        \begin{itemize}
+            \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
+            \item Precondizione: l'utente è autenticato.
+            \item Postcondizione: l'utente non è più autenticato.
+            \item Scenario principale: l'utente vuole uscire dal proprio account.
+        \end{itemize}
+    \subsubsection{UC 2.2 - Cambio password}
+        \begin{itemize}
+            \item Attore primario: utente autenticato.
+            \item Precondizione: l'utente vuole cambiare la propria password.
+            \item Postcondizione: l'utente ha cambiato password.
+            \item Scenario principale: l'utente ha neccistà di cambiare la propria password, in genere quando questa non è più sicura.
+            \item Flusso di eventi:
+                \begin{enumerate}
+                    \item L'utente inserisce la vecchia password per riconfermare la sua identità [UC 2.2.1].
+                    \item L'utente inserisce la nuova password [UC 2.2.2].
+                    \item Per sicurezza il sistema chiede il reinserimento della nuova password [UC 2.2.3].
+                \end{enumerate}
+        \end{itemize}
+        \paragraph{UC 2.2.1 - Inserimento password vecchia}
+            \begin{itemize}
+                \item Attore primario: utente autenticato.
+                \item Precondizione: l'utente ha necessità di cambiare password.
+                \item Postcondizione: l'utente ha inserito la vecchia password.
+                \item Scenario principale: inserimento vecchia password per modificarla.
+                \item Estensioni:
+                    \begin{itemize}
+                        \item se la password è sbagliata viene visualizzato un messaggio d'errore.
+                    \end{itemize}
+            \end{itemize}
+        \paragraph{UC 2.2.2 - Inserimento password nuova}
+            \begin{itemize}
+                \item Attore primario: utente autenticato.
+                \item Precondizione: l'utente ha necessità di cambiare password ed ha inserito la vecchia password.
+                \item Postcondizione: l'utente non autenticato ha inserito la nuova password.
+                \item Scenario principale: inserimento nuova password.
+                \item Estensioni:
+                    \begin{itemize}
+                        \item se la password non è conforme agli standard di sicurezza viene visualizzato un messaggio d'errore.
+                    \end{itemize}
+            \end{itemize}
+        \paragraph{UC 2.2.3 - Conferma password}
+            \begin{itemize}
+                \item Attore primario: utente autenticato.
+                \item Precondizione: l'utente ha necessità di cambiare password ed ha inserito la vecchia e la nuova password.
+                \item Postcondizione: l'utente non autenticato ha inserito di nuovo la nuova password.
+                \item Scenario principale: conferma nuova password per evitare errori.
+                \item Estensioni:
+                    \begin{itemize}
+                        \item se la password non è uguale a quella inserita in precedenza viene visualizzato un messaggio d'errore.
+                    \end{itemize}
+            \end{itemize}
+
+
+
+
+    
+
+
+
+\subsection{UC 4 - Inserimento traduzione}
     \begin{itemize}
     \item Attore primario: utente autenticato qualsiasi.
     \item Precondizione: l'utente vuole inserire una nuova traduzione.
@@ -68,132 +246,132 @@ In questa sezione verranno presentati gli use cases tracciati, che il software d
             \item L'utente inserisce l'espressione tradotta [UC 4.4].
         \end{enumerate}
     \end{itemize}
-    \subsubsection*{UC 4.1 - Inserimento lingua da tradurre}
+    \subsubsection{UC 4.1 - Inserimento lingua da tradurre}
         \begin{itemize}
             \item Attore primario: utente autenticato qualsiasi.
             \item Precondizione: l'utente ha necessità di inserire una traduzione.
             \item Postcondizione: l'utente ha inserito la lingua da tradurre.
             \item Estensione: l'utente deve inserire obbligatoriamente una lingua da tradurre altrimenti viene visualizzato un messaggio d'errore e non viene salvata la traduzione.
         \end{itemize}
-    \subsubsection*{UC 4.2 - Inserimento lingua tradotta}
+    \subsubsection{UC 4.2 - Inserimento lingua tradotta}
         \begin{itemize}
             \item Attore primario: utente autenticato qualsiasi.
             \item Precondizione: l'utente ha necessità di inserire una traduzione.
             \item Postcondizione: l'utente ha inserito la lingua in cui tradurre.
             \item Estensione: l'utente deve inserire obbligatoriamente una lingua in cui tradurre altrimenti viene visualizzato un messaggio d'errore e non viene salvata la traduzione.
         \end{itemize}
-    \subsubsection*{UC 4.3 - Inserimento espressione lingua da tradurre}
+    \subsubsection{UC 4.3 - Inserimento espressione lingua da tradurre}
         \begin{itemize}
             \item Attore primario: utente autenticato qualsiasi.
             \item Precondizione: l'utente ha necessità di inserire una traduzione.
             \item Postcondizione: l'utente ha inserito l'espressione da tradurre.
             \item Estensione: l'utente deve inserire obbligatoriamente almeno un carattere altrimenti viene visualizzato un messaggio d'errore e non viene salvata la traduzione.
         \end{itemize}
-    \subsubsection*{UC 4.4 - Inserimento espressione lingua tradotta}
+    \subsubsection{UC 4.4 - Inserimento espressione lingua tradotta}
         \begin{itemize}
             \item Attore primario: utente autenticato qualsiasi.
             \item Precondizione: l'utente ha necessità di inserire una traduzione.
             \item Postcondizione: l'utente ha inserito l'espressione in cui tradurre.
             \item Estensione: l'utente deve inserire obbligatoriamente almeno un carattere altrimenti viene visualizzato un messaggio d'errore e non viene salvata la traduzione.
         \end{itemize}
-\subsection*{UC 5 - Revisione traduzione}
-    \subsubsection*{UC 5.1 - Approvazione}
-    \subsubsection*{UC 5.2 - Eliminazione}
+\subsection{UC 5 - Revisione traduzione}
+    \subsubsection{UC 5.1 - Approvazione}
+    \subsubsection{UC 5.2 - Eliminazione}
     Flusso di eventi: utente schiaccia elimina, utente schiaccia conferma elimina
-\subsection*{UC 6 - Modifica traduzione}
+\subsection{UC 6 - Modifica traduzione}
 Flusso di eventi: UC6.1 UC6.2 UC6.3 UC6.4   %! Eventualmente togliere il modifica lingue
-    \subsubsection*{UC 6.1 - Modifica lingua da tradurre}
-    \subsubsection*{UC 6.2 - Modifica lingua tradotta}
-    \subsubsection*{UC 6.3 - Modifica espressione lingua da tradurre}
-    \subsubsection*{UC 6.4 - Modifica espressione lingua tradotta}
-\subsection*{UC 7 - Elimina traduzione} %! Eliminazione di più traduzioni?
+    \subsubsection{UC 6.1 - Modifica lingua da tradurre}
+    \subsubsection{UC 6.2 - Modifica lingua tradotta}
+    \subsubsection{UC 6.3 - Modifica espressione lingua da tradurre}
+    \subsubsection{UC 6.4 - Modifica espressione lingua tradotta}
+\subsection{UC 7 - Elimina traduzione} %! Eliminazione di più traduzioni?
 Flusso di eventi: utente schiaccia elimina, utente schiaccia conferma elimina
-\subsection*{UC 8 - Ricerca}
+\subsection{UC 8 - Ricerca}
     \begin{itemize}
         \item Attore primario: utente traduttore, utente admin, utente super admin(zero12).
         \item Precondizione: l'utente ha necessità di recercare una traduzione.
         \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano la query inserita.
         \item Estensione: l'utente deve inserire o una parola o un id collegato ad una traduzione
     \end{itemize}
-    \subsubsection*{UC 8.1 - Ricerca tramite parola}
+    \subsubsection{UC 8.1 - Ricerca tramite parola}
         \begin{itemize}
             \item Attore primario: utente traduttore, utente admin, utente super admin(zero12).
             \item Precondizione: l'utente ha necessità di recercare una traduzione per parola.
             \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano la parola inserita.
             \item Flusso: Inserimento parola [8.1.1]
         \end{itemize}
-        \paragraph*{UC 8.1.1 - Inserimento parola}
+        \paragraph{UC 8.1.1 - Inserimento parola}
             \begin{itemize}
                 \item Attore primario: utente traduttore, utente admin, utente super admin(zero12).
                 \item Precondizione: l'utente ha necessità di inserire una parola per recercare una traduzione.
                 \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano la parola inserita.
                 \item Estensione: l'utente deve inserire la parola
             \end{itemize}
-    \subsubsection*{UC 8.2 - Ricerca tramite id univoco}
+    \subsubsection{UC 8.2 - Ricerca tramite id univoco}
         \begin{itemize}
             \item Attore primario: utente traduttore, utente admin, utente super admin(zero12).
             \item Precondizione: l'utente ha necessità di recercare una traduzione per id univoco della traduzione.
             \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano l' id inserito.
             \item Flusso: Inserimento parola [8.2.1]
         \end{itemize}
-        \paragraph*{UC 8.2.1 - Inserimento id}
+        \paragraph{UC 8.2.1 - Inserimento id}
             \begin{itemize}
                 \item Attore primario: utente traduttore, utente admin, utente super admin(zero12).
                 \item Precondizione: l'utente ha necessità di inserire un id per recercare una traduzione.
                 \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano l'id inserito.
                 \item Estensione: l'utente deve inserire la parola
             \end{itemize}
-\subsubsection*{UC 9 - Filtraggio ricerca}
+\subsubsection{UC 9 - Filtraggio ricerca}
     \begin{itemize}
         \item Attore primario: utente traduttore, utente admin, utente super admin(zero12).
         \item Precondizione: l'utente ha necessità di filtrare la ricerca effetuata.
         \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano i filtri inseriti.
         \item Estensione: l'utente deve selezionare uno tra i seguenti filtri: lingua da tradurre, lingua tradotta, data creazione, utente traduttore, approvazione, pubblicazione  ????
     \end{itemize}
-    \subsubsection*{UC 9.1 - Filtraggio per lingua da tradurre}
+    \subsubsection{UC 9.1 - Filtraggio per lingua da tradurre}
         \begin{itemize}
             \item Attore primario: utente traduttore, utente admin, utente super admin(zero12).
             \item Precondizione: l'utente ha necessità di filtrare la ricerca effetuata per la lingua da tradurre.
             \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano la lingua selezionata precedentemente. 
             \item Estensione: l'utente deve selezionare la lingua da tradurre per eseguire la ricerca filtrata.
         \end{itemize}        
-    \subsubsection*{UC 9.2 - Filtraggio per lingua tradotta}
+    \subsubsection{UC 9.2 - Filtraggio per lingua tradotta}
         \begin{itemize}
             \item Attore primario: utente traduttore, utente admin, utente super admin(zero12).
             \item Precondizione: l'utente ha necessità di filtrare la ricerca effetuata per la lingua tradotta.
             \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano la lingua selezionata precedentemente. 
             \item Estensione: l'utente deve selezionare la lingua tradotta per eseguire la ricerca filtrata.
         \end{itemize}        
-    \subsubsection*{UC 9.3 - Filtraggio per data di creazione}
+    \subsubsection{UC 9.3 - Filtraggio per data di creazione}
         \begin{itemize}
             \item Attore primario: utente traduttore, utente admin, utente super admin(zero12).
             \item Precondizione: l'utente ha necessità di filtrare la ricerca effetuata per la data di creazione.
             \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano la data di creazione precedentemente selezionata. 
             \item Estensione: l'utente deve selezionare la data di creazione per eseguire la ricerca filtrata.
         \end{itemize}       
-    \subsubsection*{UC 9.4 - Filtraggio per utente traduttore}
+    \subsubsection{UC 9.4 - Filtraggio per utente traduttore}
         \begin{itemize}
             \item Attore primario: utente traduttore, utente admin, utente super admin(zero12).
             \item Precondizione: l'utente ha necessità di filtrare la ricerca effetuata per utente traduttore.
             \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano l'utente traduttore precedentemente selezionato. 
             \item Estensione: l'utente deve selezionare l'utente traduttore per eseguire la ricerca filtrata.
         \end{itemize}  
-    \subsubsection*{UC 9.5 - Filtraggio per approvazione}
+    \subsubsection{UC 9.5 - Filtraggio per approvazione}
         \begin{itemize}
             \item Attore primario: utente traduttore, utente admin, utente super admin(zero12).
             \item Precondizione: l'utente ha necessità di filtrare la ricerca effetuata per approvazione.
             \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano l'approvazione precedentemente selezionata. 
             \item Estensione: l'utente deve selezionare l'approvazione per eseguire la ricerca filtrata.
         \end{itemize}  
-    \subsubsection*{UC 9.6 - Filtraggio per pubblicazione}
+    \subsubsection{UC 9.6 - Filtraggio per pubblicazione}
         \begin{itemize}
             \item Attore primario: utente traduttore, utente admin, utente super admin(zero12).
             \item Precondizione: l'utente ha necessità di filtrare la ricerca effetuata per pubblicazione.
             \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano la pubblicazione precedentemente selezionata. 
             \item Estensione: l'utente deve selezionare la pubblicazione per eseguire la ricerca filtrata.
         \end{itemize} 
-\subsection*{UC 10 - Pubblicazione di una traduzione} %! Pubblicazione di più traduzioni?
-\subsection*{UC 11 - Aggiunta cliente}
+\subsection{UC 10 - Pubblicazione di una traduzione} %! Pubblicazione di più traduzioni?
+\subsection{UC 11 - Aggiunta cliente}
     \begin{itemize}
         \item Attore primario: utente super admin(zero12).
         \item Precondizione: l'utente ha necessità di aggiungere un nuovo cliente.
@@ -205,21 +383,21 @@ Flusso di eventi: utente schiaccia elimina, utente schiaccia conferma elimina
             \item L'utente inserisce il numero di traduzioni disponibili [UC 11.2].
         \end{enumerate}
     \end{itemize}
-    \subsubsection*{UC 11.1 - Inserimento nome cliente}
+    \subsubsection{UC 11.1 - Inserimento nome cliente}
         \begin{itemize}
             \item Attore primario: utente super admin(zero12).
             \item Precondizione: l'utente ha necessità di inserire un cliente, la procedura di inserimento richiede il nome dell'azienda.
             \item Postcondizione: l'utente ha eliminato il cliente.
             \item Estensione: l'utente deve inserire obbligatoriamente il nome del cliente valido(presente nella lista dei clienti) altrimenti viene visualizzato un messaggio d'errore.
         \end{itemize}
-    \subsubsection*{UC 11.2 - Inserimento numero traduzioni disponibili}
+    \subsubsection{UC 11.2 - Inserimento numero traduzioni disponibili}
         \begin{itemize}
             \item Attore primario: utente super admin(zero12).
             \item Precondizione: l'utente ha necessità di inserire il numero delle traduzioni disponibili(si chiede una fatturazione per lo spazio su disco richiesto per salvare il numero di traduzioni richieste).
             \item Postcondizione: l'utente ha inserito il numero delle traduzioni.
             \item Estensione: ??
         \end{itemize}
-\subsection*{UC 12 - Eliminazione cliente}
+\subsection{UC 12 - Eliminazione cliente}
     \begin{itemize}
         \item Attore primario: utente super admin(zero12).
         \item Precondizione: l'utente ha necessità di eliminare un cliente.
