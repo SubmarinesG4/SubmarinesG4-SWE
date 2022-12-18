@@ -289,44 +289,30 @@ Flusso di eventi: utente schiaccia elimina, utente schiaccia conferma elimina
 \subsection{UC 8 - Ricerca}
     \begin{itemize}
         \item Attore primario: utente traduttore, utente admin, utente super admin(zero12).
-        \item Precondizione: l'utente ha necessità di recercare una traduzione.
+        \item Precondizione: l'utente all'interno di un progetto ha necessità di ricercare una traduzione.
         \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano la query inserita.
-        \item Estensione: l'utente deve inserire o una parola o un id collegato ad una traduzione
+        \item Estensione: l'utente deve inserire l'id collegato ad una traduzione
     \end{itemize}
-    \subsubsection{UC 8.1 - Ricerca tramite parola}
-        \begin{itemize}
-            \item Attore primario: utente traduttore, utente admin, utente super admin(zero12).
-            \item Precondizione: l'utente ha necessità di recercare una traduzione per parola.
-            \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano la parola inserita.
-            \item Flusso: Inserimento parola [8.1.1]
-        \end{itemize}
-        \paragraph{UC 8.1.1 - Inserimento parola}
-            \begin{itemize}
-                \item Attore primario: utente traduttore, utente admin, utente super admin(zero12).
-                \item Precondizione: l'utente ha necessità di inserire una parola per recercare una traduzione.
-                \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano la parola inserita.
-                \item Estensione: l'utente deve inserire la parola
-            \end{itemize}
     \subsubsection{UC 8.2 - Ricerca tramite id univoco}
         \begin{itemize}
             \item Attore primario: utente traduttore, utente admin, utente super admin(zero12).
             \item Precondizione: l'utente ha necessità di recercare una traduzione per id univoco della traduzione.
             \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano l' id inserito.
-            \item Flusso: Inserimento parola [8.2.1]
+            \item Flusso: Inserimento id univoco [8.2.1]
         \end{itemize}
-        \paragraph{UC 8.2.1 - Inserimento id}
+        \paragraph{UC 8.2.1 - Inserimento id univoco}
             \begin{itemize}
                 \item Attore primario: utente traduttore, utente admin, utente super admin(zero12).
-                \item Precondizione: l'utente ha necessità di inserire un id per recercare una traduzione.
+                \item Precondizione: l'utente ha necessità di inserire un id per ricercare una traduzione.
                 \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano l'id inserito.
-                \item Estensione: l'utente deve inserire la parola
+                \item Estensione: l'utente deve inserire l'id univoco
             \end{itemize}
 \subsubsection{UC 9 - Filtraggio ricerca}
     \begin{itemize}
         \item Attore primario: utente traduttore, utente admin, utente super admin(zero12).
         \item Precondizione: l'utente ha necessità di filtrare la ricerca effetuata.
         \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano i filtri inseriti.
-        \item Estensione: l'utente deve selezionare uno tra i seguenti filtri: lingua da tradurre, lingua tradotta, data creazione, utente traduttore, approvazione, pubblicazione  ????
+        \item Estensione: l'utente deve selezionare uno tra i seguenti filtri: lingua da tradurre, lingua tradotta, data di creazione, utente traduttore, approvazione, pubblicazione
     \end{itemize}
     \subsubsection{UC 9.1 - Filtraggio per lingua da tradurre}
         \begin{itemize}
@@ -370,7 +356,12 @@ Flusso di eventi: utente schiaccia elimina, utente schiaccia conferma elimina
             \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano la pubblicazione precedentemente selezionata. 
             \item Estensione: l'utente deve selezionare la pubblicazione per eseguire la ricerca filtrata.
         \end{itemize} 
-\subsection{UC 10 - Pubblicazione di una traduzione} %! Pubblicazione di più traduzioni?
+\subsection{UC 10 - Pubblicazione di una traduzione}
+        \begin{itemize}
+            \item Attore primario: utente admin.
+            \item Precondizione: l'utente admin ha necessità di pubblicare le traduzioni, le traduzioni possono essere pubblicate solo se passano l'approvazione. 
+            \item Postcondizione: l'utente admin ha pubblicato le traduzioni approvate. 
+        \end{itemize}
 \subsection{UC 11 - Aggiunta cliente}
     \begin{itemize}
         \item Attore primario: utente super admin(zero12).
@@ -395,7 +386,6 @@ Flusso di eventi: utente schiaccia elimina, utente schiaccia conferma elimina
             \item Attore primario: utente super admin(zero12).
             \item Precondizione: l'utente ha necessità di inserire il numero delle traduzioni disponibili(si chiede una fatturazione per lo spazio su disco richiesto per salvare il numero di traduzioni richieste).
             \item Postcondizione: l'utente ha inserito il numero delle traduzioni.
-            \item Estensione: ??
         \end{itemize}
 \subsection{UC 12 - Eliminazione cliente}
     \begin{itemize}
@@ -403,5 +393,12 @@ Flusso di eventi: utente schiaccia elimina, utente schiaccia conferma elimina
         \item Precondizione: l'utente ha necessità di eliminare un cliente.
         \item Postcondizione: l'utente ha eliminato il cliente.
         \item Estensione: l'utente deve inserire obbligatoriamente il nome del cliente valido(presente nella lista dei clienti) altrimenti viene visualizzato un messaggio d'errore.
+    \end{itemize}
+\subsection{UC 13 - Ricerca traduzione da libreria client}
+    \begin{itemize}
+        \item Attore primario: libreria client.
+        \item Precondizione: libreria client ha necessità di ricercare una traduzione.
+        \item Postcondizione: libreria client ha ricevuto la traduzione.
+        \item Estensione: libreria client per richiedere la traduzione deve autenticarsi all'API in modo tale da ricevere solo le traduzioni a cui ha accesso.
     \end{itemize}
 
