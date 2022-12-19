@@ -43,29 +43,27 @@
 \contentsline {subsubsection}{\numberline {4.4.2}UC 3.2 - Inserimento traduzione}{8}{subsubsection.4.4.2}%
 \contentsline {subsection}{\numberline {4.5}UC 4 - Revisione traduzione}{8}{subsection.4.5}%
 \contentsline {subsubsection}{\numberline {4.5.1}UC 4.1 - Approvazione}{8}{subsubsection.4.5.1}%
-\contentsline {subsubsection}{\numberline {4.5.2}UC 4.2 - Respingimento}{9}{subsubsection.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.5.2}UC 4.2 - Traduzione da modificare}{9}{subsubsection.4.5.2}%
 \contentsline {subsection}{\numberline {4.6}UC 5 - Modifica traduzione}{9}{subsection.4.6}%
 \contentsline {subsubsection}{\numberline {4.6.1}UC 5.1 - L'utente seleziona la lingua in cui c'è una traduzione che vuole modificare}{9}{subsubsection.4.6.1}%
 \contentsline {subsubsection}{\numberline {4.6.2}UC 5.2 - Inserimento modifica}{9}{subsubsection.4.6.2}%
 \contentsline {subsection}{\numberline {4.7}UC 6 - Elimina traduzione}{10}{subsection.4.7}%
-\contentsline {subsection}{\numberline {4.8}UC 8 - Ricerca}{10}{subsection.4.8}%
-\contentsline {subsubsection}{\numberline {4.8.1}UC 8.2 - Ricerca tramite id univoco}{10}{subsubsection.4.8.1}%
-\contentsline {paragraph}{\numberline {4.8.1.1}UC 8.2.1 - Inserimento id univoco}{10}{paragraph.4.8.1.1}%
-\contentsline {subsubsection}{\numberline {4.8.2}UC 9 - Filtraggio ricerca}{11}{subsubsection.4.8.2}%
-\contentsline {subsubsection}{\numberline {4.8.3}UC 9.1 - Filtraggio per lingua da tradurre}{11}{subsubsection.4.8.3}%
-\contentsline {subsubsection}{\numberline {4.8.4}UC 9.2 - Filtraggio per lingua tradotta}{11}{subsubsection.4.8.4}%
-\contentsline {subsubsection}{\numberline {4.8.5}UC 9.3 - Filtraggio per data di creazione}{11}{subsubsection.4.8.5}%
-\contentsline {subsubsection}{\numberline {4.8.6}UC 9.4 - Filtraggio per utente traduttore}{11}{subsubsection.4.8.6}%
-\contentsline {subsubsection}{\numberline {4.8.7}UC 9.5 - Filtraggio per approvazione}{12}{subsubsection.4.8.7}%
-\contentsline {subsubsection}{\numberline {4.8.8}UC 9.6 - Filtraggio per pubblicazione}{12}{subsubsection.4.8.8}%
-\contentsline {subsection}{\numberline {4.9}UC 10 - Pubblicazione di una traduzione}{12}{subsection.4.9}%
-\contentsline {subsection}{\numberline {4.10}UC 11 - Aggiunta cliente}{12}{subsection.4.10}%
-\contentsline {subsubsection}{\numberline {4.10.1}UC 11.1 - Inserimento nome cliente}{12}{subsubsection.4.10.1}%
-\contentsline {subsubsection}{\numberline {4.10.2}UC 11.2 - Inserimento numero traduzioni disponibili}{13}{subsubsection.4.10.2}%
-\contentsline {subsection}{\numberline {4.11}UC 12 - Eliminazione cliente}{13}{subsection.4.11}%
-\contentsline {subsection}{\numberline {4.12}UC 13 - Ricerca traduzione da libreria client}{13}{subsection.4.12}%
+\contentsline {subsection}{\numberline {4.8}UC 7 - Ricerca}{10}{subsection.4.8}%
+\contentsline {subsubsection}{\numberline {4.8.1}UC 7.1 - Inserimento id univoco}{10}{subsubsection.4.8.1}%
+\contentsline {subsection}{\numberline {4.9}UC 8 - Filtraggio ricerca}{10}{subsection.4.9}%
+\contentsline {subsubsection}{\numberline {4.9.1}UC 8.1 - Filtraggio per data di creazione}{11}{subsubsection.4.9.1}%
+\contentsline {subsubsection}{\numberline {4.9.2}UC 8.2 - Filtraggio per utente traduttore}{11}{subsubsection.4.9.2}%
+\contentsline {subsubsection}{\numberline {4.9.3}UC 8.3 - Filtraggio per approvazione}{11}{subsubsection.4.9.3}%
+\contentsline {subsubsection}{\numberline {4.9.4}UC 8.4 - Filtraggio per in "modifica"}{11}{subsubsection.4.9.4}%
+\contentsline {subsubsection}{\numberline {4.9.5}UC 8.5 - Filtraggio per pubblicazione}{12}{subsubsection.4.9.5}%
+\contentsline {subsection}{\numberline {4.10}UC 9 - Pubblicazione di una traduzione}{12}{subsection.4.10}%
+\contentsline {subsection}{\numberline {4.11}UC 10 - Aggiunta cliente}{12}{subsection.4.11}%
+\contentsline {subsubsection}{\numberline {4.11.1}UC 10.1 - Inserimento nome cliente}{12}{subsubsection.4.11.1}%
+\contentsline {subsubsection}{\numberline {4.11.2}UC 10.2 - Inserimento numero traduzioni disponibili}{13}{subsubsection.4.11.2}%
+\contentsline {subsection}{\numberline {4.12}UC 11 - Eliminazione cliente}{13}{subsection.4.12}%
+\contentsline {subsection}{\numberline {4.13}UC 12 - Ricerca traduzione da libreria client}{13}{subsection.4.13}%
 \contentsline {section}{\numberline {5}Requisiti}{13}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Requisiti di vincolo}{13}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Requisiti di qualità}{13}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Requisiti funzionali}{13}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Tracciamento requisiti}{13}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.1}Requisiti di vincolo}{14}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Requisiti di qualità}{14}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Requisiti funzionali}{14}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Tracciamento requisiti}{14}{subsection.5.4}%

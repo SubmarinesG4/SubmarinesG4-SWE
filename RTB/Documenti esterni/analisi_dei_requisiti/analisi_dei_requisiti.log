@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.24)  19 DEC 2022 16:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.24)  19 DEC 2022 17:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -943,7 +943,7 @@ LaTeX Info: Redefining \nameref on input line 5.
 \openout4 = `analisi_dei_requisiti.out'.
 
  (../template/source/firstpage.tex
-<../template/img/logo.jpg, id=300, 326.21875pt x 195.73125pt>
+<../template/img/logo.jpg, id=276, 326.21875pt x 195.73125pt>
 File: ../template/img/logo.jpg Graphic file (type jpg)
 <use ../template/img/logo.jpg>
 Package pdftex.def Info: ../template/img/logo.jpg  used on input line 6.
@@ -968,7 +968,7 @@ l.31 \renewcommand
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.50 ...ingua da tradurre}{9}{subsubsection.4.6.1}
+l.50 ... - Elimina traduzione}{10}{subsection.4.7}
                                                   % [3])
 \tf@toc=\write5
 \openout5 = `analisi_dei_requisiti.toc'.
@@ -1002,7 +1002,7 @@ Overfull \hbox (13.80145pt too wide) in paragraph at lines 9--10
  []
 
 ) (./sezioni/desGen.tex
-<../template/img/logo_header.jpg, id=412, 1066.98625pt x 617.30624pt>
+<../template/img/logo_header.jpg, id=382, 1066.98625pt x 617.30624pt>
 File: ../template/img/logo_header.jpg Graphic file (type jpg)
 <use ../template/img/logo_header.jpg>
 Package pdftex.def Info: ../template/img/logo_header.jpg  used on input line 14.
@@ -1096,7 +1096,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 [7]
 File: ../template/img/logo_header.jpg Graphic file (type jpg)
 <use ../template/img/logo_header.jpg>
-Package pdftex.def Info: ../template/img/logo_header.jpg  used on input line 281.
+Package pdftex.def Info: ../template/img/logo_header.jpg  used on input line 285.
 (pdftex.def)             Requested size: 28.45274pt x 16.45555pt.
 
 
@@ -1109,7 +1109,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 [8]
 File: ../template/img/logo_header.jpg Graphic file (type jpg)
 <use ../template/img/logo_header.jpg>
-Package pdftex.def Info: ../template/img/logo_header.jpg  used on input line 321.
+Package pdftex.def Info: ../template/img/logo_header.jpg  used on input line 326.
 (pdftex.def)             Requested size: 28.45274pt x 16.45555pt.
 
 
@@ -1122,7 +1122,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 [9]
 File: ../template/img/logo_header.jpg Graphic file (type jpg)
 <use ../template/img/logo_header.jpg>
-Package pdftex.def Info: ../template/img/logo_header.jpg  used on input line 356.
+Package pdftex.def Info: ../template/img/logo_header.jpg  used on input line 365.
 (pdftex.def)             Requested size: 28.45274pt x 16.45555pt.
 
 
@@ -1135,7 +1135,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 [10]
 File: ../template/img/logo_header.jpg Graphic file (type jpg)
 <use ../template/img/logo_header.jpg>
-Package pdftex.def Info: ../template/img/logo_header.jpg  used on input line 390.
+Package pdftex.def Info: ../template/img/logo_header.jpg  used on input line 401.
 (pdftex.def)             Requested size: 28.45274pt x 16.45555pt.
 
 
@@ -1148,7 +1148,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 [11]
 File: ../template/img/logo_header.jpg Graphic file (type jpg)
 <use ../template/img/logo_header.jpg>
-Package pdftex.def Info: ../template/img/logo_header.jpg  used on input line 427.
+Package pdftex.def Info: ../template/img/logo_header.jpg  used on input line 438.
 (pdftex.def)             Requested size: 28.45274pt x 16.45555pt.
 
 
@@ -1171,46 +1171,38 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-5.53558pt}.
 
-[13] 
+[13]
+File: ../template/img/logo_header.jpg Graphic file (type jpg)
+<use ../template/img/logo_header.jpg>
+Package pdftex.def Info: ../template/img/logo_header.jpg  used on input line 40.
+(pdftex.def)             Requested size: 28.45274pt x 16.45555pt.
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 20.53558pt, for example:
+(fancyhdr)                \setlength{\headheight}{20.53558pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-5.53558pt}.
+
+[14] 
 AED: lastpage setting LastPage
 (./analisi_dei_requisiti.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `analisi_dei_requisiti.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `analisi_dei_requisiti.out':
-(rerunfilecheck)             Before: 1D443B13FE447007C09AFAF5B7123672;15467
-(rerunfilecheck)             After:  815C443263F240A87A3CD090A3188634;14391.
+Package rerunfilecheck Info: File `analisi_dei_requisiti.out' has not changed.
+(rerunfilecheck)             Checksum: 01328B592DFDBF43B745604D950012E6;13855.
  ) 
 Here is how much of TeX's memory you used:
- 35013 strings out of 478268
- 680717 string characters out of 5846346
- 1032539 words of memory out of 5000000
- 52480 multiletter control sequences out of 15000+600000
+ 35007 strings out of 478268
+ 680515 string characters out of 5846346
+ 1032572 words of memory out of 5000000
+ 52474 multiletter control sequences out of 15000+600000
  476344 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  120i,15n,121p,1274b,652s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{subsubsection.4.6.4} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsubsection.4.6.3} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsubsection.4.4.4} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsubsection.4.4.3} has been referenced but does not exist, replaced by a fixed one
-
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on analisi_dei_requisiti.pdf (19 pages, 211152 bytes).
+Output written on analisi_dei_requisiti.pdf (20 pages, 212092 bytes).
 PDF statistics:
- 578 PDF objects out of 1000 (max. 8388607)
- 535 compressed objects within 6 object streams
+ 558 PDF objects out of 1000 (max. 8388607)
+ 514 compressed objects within 6 object streams
  124 named destinations out of 1000 (max. 500000)
- 607 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 559 words of extra memory for PDF output out of 10000 (max. 10000000)
 
