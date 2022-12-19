@@ -157,7 +157,6 @@ In questa sezione verranno presentati gli use cases tracciati, che il software d
                             \item Se la password non è uguale a quella inserita in [UC 1.3.2] viene visualizzato un messaggio d'errore e il reset non viene eseguito.
                         \end{itemize}
             \end{itemize}
-
 \subsection{UC 2 - Area personale}
     \begin{itemize}
         \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
@@ -223,70 +222,111 @@ In questa sezione verranno presentati gli use cases tracciati, che il software d
                         \item se la password non è uguale a quella inserita in precedenza viene visualizzato un messaggio d'errore.
                     \end{itemize}
             \end{itemize}
-
-
-
-
-    
-
-
-
-\subsection{UC 4 - Inserimento traduzione}
+\subsection{UC 3 - Inserimento traduzione}
     \begin{itemize}
-    \item Attore primario: utente autenticato qualsiasi.
-    \item Precondizione: l'utente vuole inserire una nuova traduzione.
-    \item Postcondizione: l'utente ha correttamente inserito una nuova traduzione.
-    \item Scenario principale: l'utente clicca sul pulsante "Nuova traduzione", compila i campi dati relativi e clicca il pulsante conferma.
-    \item Flusso di eventi:
-        \begin{enumerate}
-            \item L'utente clicca sul pulsante "Nuova traduzione".
-            \item L'utente inserisce la lingua da tradurre [UC 4.1].
-            \item L'utente inserisce la lingua in cui bisogna tradurre [UC 4.2].
-            \item L'utente inserisce l'espressione da traddure [UC 4.3].
-            \item L'utente inserisce l'espressione tradotta [UC 4.4].
-        \end{enumerate}
+        \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
+        \item Precondizione: l'utente vuole inserire una nuova traduzione.
+        \item Postcondizione: l'utente ha inserito una nuova traduzione.
+        \item Scenario principale: l'utente clicca sul pulsante "Nuova traduzione", compila i campi dati relativi e clicca il pulsante conferma.
+        \item Flusso di eventi:
+            \begin{enumerate}
+                \item L'utente clicca sul pulsante "Nuova traduzione".
+                \item L'utente seleziona la lingua in cui tradurre [UC 3.1].
+                \item L'utente scrive la frase/parola da tradurre [UC 3.2].
+                \item L'utente clicca sul pulsante conferma.
+            \end{enumerate}
+        \item Estensioni:
+        \begin{itemize}
+            \item se l'utente non ha selezionato una lingua in cui tradurre o se non ha inserito la traduzione viene visualizzato un messaggio d'errore.
+        \end{itemize}
     \end{itemize}
-    \subsubsection{UC 4.1 - Inserimento lingua da tradurre}
+    \subsubsection{UC 3.1 - Selezione lingua in cui tradurre}
         \begin{itemize}
-            \item Attore primario: utente autenticato qualsiasi.
-            \item Precondizione: l'utente ha necessità di inserire una traduzione.
-            \item Postcondizione: l'utente ha inserito la lingua da tradurre.
-            \item Estensione: l'utente deve inserire obbligatoriamente una lingua da tradurre altrimenti viene visualizzato un messaggio d'errore e non viene salvata la traduzione.
+            \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
+            \item Precondizione: l'utente vuole inserire una traduzione.
+            \item Postcondizione: l'utente ha selezionato la lingua in cui tradurre.
+            \item Scenario principale: l'utente vuole inserire una traduzione e seleziona la lingua in cui tradurre.
         \end{itemize}
-    \subsubsection{UC 4.2 - Inserimento lingua tradotta}
+    \subsubsection{UC 3.2 - Inserimento traduzione}
         \begin{itemize}
-            \item Attore primario: utente autenticato qualsiasi.
+            \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
             \item Precondizione: l'utente ha necessità di inserire una traduzione.
-            \item Postcondizione: l'utente ha inserito la lingua in cui tradurre.
-            \item Estensione: l'utente deve inserire obbligatoriamente una lingua in cui tradurre altrimenti viene visualizzato un messaggio d'errore e non viene salvata la traduzione.
+            \item Postcondizione: l'utente ha inserito la traduzione.
+            \item Scenario principale: l'utente vuole inserire una traduzione e seleziona la lingua in cui tradurre.
         \end{itemize}
-    \subsubsection{UC 4.3 - Inserimento espressione lingua da tradurre}
+\subsection{UC 4 - Revisione traduzione}
+    \begin{itemize}
+        \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
+        \item Precondizione: l'utente vuole revisionare una traduzione.
+        \item Postcondizione: l'utente ha revisionato la traduzione.
+        \item Scenario principale: l'utente vuole revisionare una traduzione e la approva [UC 4.1].
+        \item Scenario alternativo: l'utente vuole revisionare una traduzione e la respinge visto che è sbagliata [UC 4.2].
+        \item Flusso di eventi:
+            \begin{enumerate}
+                \item L'utente seleziona la traduzione che vuole revisionare.
+                \item L'utente decide se è approvata [UC 4.1] oppure respinta [UC 4.2].
+            \end{enumerate}
+    \end{itemize}
+    \subsubsection{UC 4.1 - Approvazione}
         \begin{itemize}
-            \item Attore primario: utente autenticato qualsiasi.
-            \item Precondizione: l'utente ha necessità di inserire una traduzione.
-            \item Postcondizione: l'utente ha inserito l'espressione da tradurre.
-            \item Estensione: l'utente deve inserire obbligatoriamente almeno un carattere altrimenti viene visualizzato un messaggio d'errore e non viene salvata la traduzione.
+            \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
+            \item Precondizione: l'utente vuole revisionare una traduzione.
+            \item Postcondizione: l'utente ha revisionato la traduzione e l'ha approvata.
+            \item Scenario principale: l'utente vuole revisionare una traduzione e la approva.
         \end{itemize}
-    \subsubsection{UC 4.4 - Inserimento espressione lingua tradotta}
+    \subsubsection{UC 4.2 - Respingimento}
         \begin{itemize}
-            \item Attore primario: utente autenticato qualsiasi.
-            \item Precondizione: l'utente ha necessità di inserire una traduzione.
-            \item Postcondizione: l'utente ha inserito l'espressione in cui tradurre.
-            \item Estensione: l'utente deve inserire obbligatoriamente almeno un carattere altrimenti viene visualizzato un messaggio d'errore e non viene salvata la traduzione.
+            \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
+            \item Precondizione: l'utente vuole revisionare una traduzione.
+            \item Postcondizione: l'utente ha revisionato la traduzione e l'ha respinta.
+            \item Scenario principale: l'utente vuole revisionare una traduzione e la respinge visto che è errata.
         \end{itemize}
-\subsection{UC 5 - Revisione traduzione}
-    \subsubsection{UC 5.1 - Approvazione}
-    \subsubsection{UC 5.2 - Eliminazione}
-    Flusso di eventi: utente schiaccia elimina, utente schiaccia conferma elimina
-\subsection{UC 6 - Modifica traduzione}
-Flusso di eventi: UC6.1 UC6.2 UC6.3 UC6.4   %! Eventualmente togliere il modifica lingue
-    \subsubsection{UC 6.1 - Modifica lingua da tradurre}
-    \subsubsection{UC 6.2 - Modifica lingua tradotta}
-    \subsubsection{UC 6.3 - Modifica espressione lingua da tradurre}
-    \subsubsection{UC 6.4 - Modifica espressione lingua tradotta}
-\subsection{UC 7 - Elimina traduzione} %! Eliminazione di più traduzioni?
-Flusso di eventi: utente schiaccia elimina, utente schiaccia conferma elimina
-\subsection{UC 8 - Ricerca}
+\subsection{UC 5 - Modifica traduzione}
+    \begin{itemize}
+        \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
+        \item Precondizione: l'utente vuole modificare una traduzione.
+        \item Postcondizione: l'utente ha modificato la traduzione.
+        \item Scenario principale: l'utente vuole modificare una traduzione.
+        \item Flusso di eventi:
+            \begin{enumerate}
+                \item L'utente seleziona la traduzione che vuole revisionare.
+                \item L'utente seleziona tra le lingue in cui ci sono traduzioni quale vuole modificare [UC 5.1].
+                \item L'utente modificare la traduzione UC [5.2].
+            \end{enumerate}
+    \end{itemize}
+    \subsubsection{UC 5.1 - L'utente seleziona la lingua in cui c'è una traduzione che vuole modificare}
+        \begin{itemize}
+            \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
+            \item Precondizione: l'utente vuole modificare una traduzione.
+            \item Postcondizione: l'utente ha selezionato tra le lingue in cui ci sono traduzioni quale vuole modificare.
+            \item Scenario principale: l'utente vuole revisionare una traduzione e seleziona la lingua in cui è tradotta la frase/parola.
+            \item Estensioni:
+                \begin{itemize}
+                    \item se l'utente non seleziona la lingua di cui vuole modificare la traduzione viene visualizzato un messaggio d'errore.
+                \end{itemize}
+        \end{itemize}
+    \subsubsection{UC 5.2 - Inserimento modifica}
+        \begin{itemize}
+            \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
+            \item Precondizione: l'utente vuole modificare una traduzione.
+            \item Postcondizione: l'utente ha inserito la modifica.
+            \item Scenario principale: l'utente vuole revisionare una traduzione e inserisce la modifica della traduzione.
+        \end{itemize}
+\subsection{UC 6 - Elimina traduzione}
+    \begin{itemize}
+        \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
+        \item Precondizione: l'utente vuole eliminare una traduzione.
+        \item Postcondizione: l'utente ha eliminato la traduzione.
+        \item Scenario principale: l'utente elimina una traduzione.
+        \item Flusso di eventi:
+            \begin{enumerate}
+                \item L'utente trova eventualmente con la ricerca la traduzione che vuole eliminare.
+                \item L'utente clicca sul tasto elimina.
+                \item Viene visualizzato un messaggio per confermare l'eliminazione.
+                \item L'utente clicca sul tasto di conferma eliminazione.
+            \end{enumerate}
+    \end{itemize}
+    \subsection{UC 8 - Ricerca}
     \begin{itemize}
         \item Attore primario: utente traduttore, utente admin, utente super admin(zero12).
         \item Precondizione: l'utente all'interno di un progetto ha necessità di ricercare una traduzione.
@@ -402,3 +442,6 @@ Flusso di eventi: utente schiaccia elimina, utente schiaccia conferma elimina
         \item Estensione: libreria client per richiedere la traduzione deve autenticarsi all'API in modo tale da ricevere solo le traduzioni a cui ha accesso.
     \end{itemize}
 
+%! GESTIONE DEI GRUPPI DI LAVORO
+%! PUBBLICAZIONE
+%! MESSAGGI D'ERRORE
