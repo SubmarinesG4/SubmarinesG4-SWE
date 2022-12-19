@@ -1,12 +1,26 @@
 \section{Descrizione generale del prodotto}
 \subsection{Scopo del prodotto}
 Lo scopo di *INSERIRE NOME SOFTWARE* è di essere un insieme di API che forniscano traduzioni multi-lingua. Saranno utilizzate quindi da terzi per effetuare traduzioni sulle applicazioni di loro proprietà.
-\subsection{Target}
-Il target del software saranno aziende proprietarie di applicativi che necessitano di un meccanismo di traduzione per interfacciarsi al mercato internazionale.
+\subsection{Constesto d'uso del prodotto}
+Il prodotto è orientato ai seguenti utenti: 
+\begin{itemize}
+    \item Aziende che vogliono creare e gestire traduzioni per app e webapp.
+    \item L'azienda Zero12 che vuole offrire un servizio per la gestione delle traduzioni create dalle aziende clienti.
+\end{itemize}
+La piattaforma deve avere supporto multi-tenant.
+Il prodotto deve agevolare le gestione dei testi tradotti. Ogni cliente ha uno spazio per le proprie traduzioni logicamente separato dalle altre.
+\subsection{Funzioni del prodotto}
+Il prodotto deve garantire per queste tipologie utente le seguenti funzionalità:
+\begin{itemize}
+    \item Utente traduttore: utenti operativi che avranno il compito di creare traduzioni. Hanno l'abilità di accedere all'interfaccia web per la crezione delle traduzioni. L'utente traduttore avrà accesso alle seguenti funzionalità: creazione, approvazione, modifica delle traduzioni. Non ha diritto di pubblicare traduzioni.
+    \item Admin user: sono coloro che gestiranno i progetti. Un progetto è l'insieme di traduzioni destinate ad un cliente(esempio: le traduzioni per una app specifica). Tramite una interfaccia web di amministrazione potrà gestire le traduzioni della propria azienda. L'utente admin possiede gli stessi diritti dell'utente traduttore con la possibilità di effettuare la pubblicazione delle traduzioni.
+    \item SuperAdmin(Zero12): sono coloro che gestiscono i tenant, cioè lo spazio di lavoro per un'azienda cliente. 
+    Inoltre, è disponibile una libreria webapp in grado di recuperare le traduzioni autenticandosi al sistema API. La libreria tramite l'autenticazione avrà accesso soltanto alle traduzioni che può leggere.
+\end{itemize}
 \subsection{Attori}
     \subsubsection{Attori principali}
         \paragraph{Utente non autenticato}
-        Sono utenti che non hanno accesso al sistema in quanto il sistema non sa chi essi siano.
+        Sono utenti che non hanno accesso al sistema in quanto non sono ancora autenticati.
         \paragraph{Utente traduttore}
         Sono gli utenti base del sistema. A loro è adibito il compito di creare, modificare, approvare o eliminare le traduzioni. Sono la vera e propria "forza-lavoro".
         \paragraph{Admin}
