@@ -222,7 +222,7 @@ In questa sezione verranno presentati gli use cases tracciati, che il software d
                         \item se la password non è uguale a quella inserita in precedenza viene visualizzato un messaggio d'errore.
                     \end{itemize}
             \end{itemize}
-\subsection{UC 3 - Inserimento traduzione}
+\subsection{UC 3 - Inserimento nuova traduzione}
     \begin{itemize}
         \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
         \item Precondizione: l'utente vuole inserire una nuova traduzione.
@@ -232,32 +232,17 @@ In questa sezione verranno presentati gli use cases tracciati, che il software d
             \begin{enumerate}
                 \item L'utente seleziona il progetto.
                 \item L'utente clicca sul pulsante "Nuova traduzione".
-                \item L'utente seleziona la lingua in cui tradurre [UC 3.1].
-                \item L'utente scrive la frase/parola da tradurre [UC 3.2].
-                \item L'utente clicca sul pulsante "Conferma".
+                \item L'utente scrive la frase/parola da tradurre.
+                \item L'utente clicca sul pulsante "Salva".
             \end{enumerate}
         \item Estensioni:
-        \begin{itemize}
-            \item se l'utente non ha selezionato una lingua in cui tradurre o se non ha inserito la traduzione viene visualizzato un messaggio d'errore.
-        \end{itemize}
+            \begin{itemize}
+                \item L'utente deve aver inserito almeno una traduzione in una lingua tra quelle disponibili.
+            \end{itemize}
     \end{itemize}
-    \subsubsection{UC 3.1 - Selezione lingua in cui tradurre}
-        \begin{itemize}
-            \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
-            \item Precondizione: l'utente vuole inserire una traduzione.
-            \item Postcondizione: l'utente ha selezionato la lingua in cui tradurre.
-            \item Scenario principale: l'utente vuole inserire una traduzione e seleziona la lingua in cui tradurre.
-        \end{itemize}
-    \subsubsection{UC 3.2 - Inserimento traduzione}
-        \begin{itemize}
-            \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
-            \item Precondizione: l'utente ha necessità di inserire una traduzione.
-            \item Postcondizione: l'utente ha inserito la traduzione.
-            \item Scenario principale: l'utente vuole inserire una traduzione e seleziona la lingua in cui tradurre.
-        \end{itemize}
 \subsection{UC 4 - Revisione traduzione}
     \begin{itemize}
-        \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
+        \item Attore primario: utente admin/utente super admin(zero12).
         \item Precondizione: l'utente vuole revisionare una traduzione.
         \item Postcondizione: l'utente ha revisionato la traduzione.
         \item Scenario principale: l'utente vuole revisionare una traduzione e la approva [UC 4.1].
@@ -267,24 +252,24 @@ In questa sezione verranno presentati gli use cases tracciati, che il software d
                 \item L'utente seleziona la traduzione che vuole revisionare e clicca sul pulsante "Revisiona".
                 \item Sottocasi:
                     \begin{enumerate}
-                        \item L'utente decide che la traduzione è approvata [UC 4.1].
-                        \item L'utente mette la traduzione in "modifica" [UC 4.2].
+                        \item L'utente pubblica la traduzione [UC 4.1].
+                        \item L'utente segnala che la traduzione è da modificare [UC 4.2].
                     \end{enumerate}
             \end{enumerate}
     \end{itemize}
-    \subsubsection{UC 4.1 - Approvazione}
+    \subsubsection{UC 4.1 - Pubblicazione}
         \begin{itemize}
-            \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
-            \item Precondizione: l'utente ha revisionato una traduzione e la vuole approvare.
-            \item Postcondizione: l'utente ha approvato la traduzione.
-            \item Scenario principale: l'utente vuole approvare una traduzione.
+            \item Attore primario: utente admin/utente super admin(zero12).
+            \item Precondizione: l'utente ha revisionato una traduzione e la pubblica.
+            \item Postcondizione: l'utente ha pubblicato la traduzione.
+            \item Scenario principale: l'utente vuole pubblicare una traduzione.
         \end{itemize}
     \subsubsection{UC 4.2 - Traduzione da modificare}
         \begin{itemize}
-            \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
-            \item Precondizione: l'utente vuole mettere in "modifica" una traduzione.
-            \item Postcondizione: l'utente ha messo in "modifica" la traduzione.
-            \item Scenario principale: l'utente vuole mettere in "modifica" una traduzione visto che è errata.
+            \item Attore primario: utente admin/utente super admin(zero12).
+            \item Precondizione: l'utente vuole segnalare che la traduzione è da modificare.
+            \item Postcondizione: l'utente segnala che la traduzione è da modificare.
+            \item Scenario principale: l'utente vuole segnalare la traduzione da modificare.
         \end{itemize}
 \subsection{UC 5 - Modifica traduzione}
     \begin{itemize}
@@ -295,31 +280,14 @@ In questa sezione verranno presentati gli use cases tracciati, che il software d
         \item Flusso di eventi:
             \begin{enumerate}
                 \item L'utente seleziona la traduzione che vuole modificare.
-                \item L'utente seleziona tra le lingue in cui è tradotta la frase/parola e sceglie quale vuole modificare [UC 5.1].
-                \item L'utente modifica la traduzione [UC 5.2].
+                \item L'utente seleziona scorre tra le lingue in cui è tradotta la frase/parola e sceglie quale vuole modificare.
+                \item L'utente modifica la traduzione.
+                \item L'utente clicca sul pulsante "Salva".
             \end{enumerate}
     \end{itemize}
-    \subsubsection{UC 5.1 - L'utente seleziona la lingua in cui c'è una traduzione che vuole modificare}
-        \begin{itemize}
-            \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
-            \item Precondizione: l'utente vuole modificare una traduzione.
-            \item Postcondizione: l'utente ha selezionato tra le lingue in cui ci sono traduzioni quale vuole modificare.
-            \item Scenario principale: l'utente vuole revisionare una traduzione e seleziona la lingua in cui è tradotta la frase/parola.
-            \item Estensioni:
-                \begin{itemize}
-                    \item se l'utente non seleziona la lingua di cui vuole modificare la traduzione viene visualizzato un messaggio d'errore.
-                \end{itemize}
-        \end{itemize}
-    \subsubsection{UC 5.2 - Inserimento modifica}
-        \begin{itemize}
-            \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
-            \item Precondizione: l'utente vuole modificare una traduzione.
-            \item Postcondizione: l'utente ha inserito la modifica.
-            \item Scenario principale: l'utente modifica della traduzione.
-        \end{itemize}
 \subsection{UC 6 - Elimina traduzione}
     \begin{itemize}
-        \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
+        \item Attore primario: utente admin/utente super admin(zero12).
         \item Precondizione: l'utente vuole eliminare una traduzione.
         \item Postcondizione: l'utente ha eliminato la traduzione.
         \item Scenario principale: l'utente elimina una traduzione.
@@ -331,6 +299,19 @@ In questa sezione verranno presentati gli use cases tracciati, che il software d
                 \item L'utente clicca sul tasto di conferma eliminazione.
             \end{enumerate}
     \end{itemize}
+\subsection{UC 7 - Versionamento}
+    \begin{itemize}
+        \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
+        \item Precondizione: l'utente vuole visualizzare l'ultima modifica di una traduzione e quale utente l'ha effetuata e quando.
+        \item Postcondizione: l'utente visualizza l'ultima modifica di una traduzione e quale utente l'ha effetuata e quando.
+        \item Scenario principale: l'utente ha visualizzato il versionamento.
+        \item \item Flusso di eventi:
+        \begin{enumerate}
+            \item L'utente seleziona la traduzione sulla quale vuole visualizzare le informazioni sull'ultima modifica.
+            \item L'utente clicca sul tasto "Ultima modifica".
+            \item Vengono visualizzate le informazioni sull'ultima modifica.
+        \end{enumerate}
+    \end{itemize}   
 \subsection{UC 7 - Ricerca}
     \begin{itemize}
         \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
@@ -339,18 +320,30 @@ In questa sezione verranno presentati gli use cases tracciati, che il software d
         \item Scenario principale: l'utente vuole ricercare una traduzione.
         \item Flusso di eventi:
             \begin{enumerate}
-                \item L'utente inserisce l'id [UC 7.1].
-                \item Il sistema ritorna tutte le traduzioni con un id corrispondente.
+                \item L'utente inserisce l'id o parola nel campo di ricerca.
+                \item Il sistema ritorna tutte le traduzioni che rispettano la query inserita.
             \end{enumerate}
+        \item Sottocasi:
+                \begin{enumerate}
+                    \item L'utente ricerca per id [UC 7.1].
+                    \item L'utente ricerca per parola [UC 7.2].
+                \end{enumerate}
     \end{itemize}
-    \subsubsection{UC 7.1 - Inserimento id univoco}
+    \subsubsection{UC 7.1 - Ricerca per id univoco}%??????
         \begin{itemize}
             \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
-            \item Precondizione: l'utente ha necessità di inserire un id per ricercare una traduzione.
-            \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano l'id inserito.
-            \item Scenario principale: l'utente inserisce l'id univoco.
+            \item Precondizione: l'utente ha necessità trovare una traduzione con l'id.
+            \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano l'id anche parzialmente inserito.%????
+            \item Scenario principale: l'utente inserisce nel campo di ricerca l'id univoco.
         \end{itemize}
-\subsection{UC 8 - Filtraggio ricerca}
+    \subsubsection{UC 7.1 - Ricerca per parola}
+        \begin{itemize}
+            \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
+            \item Precondizione: l'utente ha necessità trovare una traduzione data una o più parole.
+            \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano le parole inserite.
+            \item Scenario principale: l'utente inserisce nel campo di ricerca l'id univoco.
+        \end{itemize}
+\subsection{UC 8 - Filtraggio ricerca}%%nice to have
     \begin{itemize}
         \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
         \item Precondizione: l'utente ha necessità di filtrare la ricerca effettuata.
@@ -358,11 +351,9 @@ In questa sezione verranno presentati gli use cases tracciati, che il software d
         \item Scenario principale: l'utente vuole filtrare una ricerca.
         \item Sottocasi:
             \begin{itemize}
-                \item Filtraggio per data di creazione
-                \item Filtraggio per utente traduttore
-                \item Filtraggio per approvazione
-                \item Filtraggio per in "modifica"
-                \item Filtraggio per pubblicazione
+                \item Filtraggio per data di creazione [UC 8.1]
+                \item Filtraggio per pubblicazione [UC 8.2]
+                \item Filtraggio per in "modifica" [UC 8.3]
             \end{itemize}
     \end{itemize}  
     \subsubsection{UC 8.1 - Filtraggio per data di creazione}
@@ -372,62 +363,47 @@ In questa sezione verranno presentati gli use cases tracciati, che il software d
             \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano la data di creazione precedentemente selezionata. 
             \item Scenario principale: l'utente deve selezionare la data di creazione per eseguire la ricerca filtrata.
         \end{itemize}
-    \subsubsection{UC 8.2 - Filtraggio per utente traduttore}
-        \begin{itemize}
-            \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
-            \item Precondizione: l'utente ha necessità di filtrare la ricerca effettuata per utente traduttore.
-            \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano l'utente traduttore precedentemente selezionato. 
-            \item Scenario principale: l'utente deve selezionare l'utente traduttore per eseguire la ricerca filtrata.
-        \end{itemize}
-    \subsubsection{UC 8.3 - Filtraggio per approvazione}
-        \begin{itemize}
-            \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
-            \item Precondizione: l'utente ha necessità di filtrare la ricerca effettuata per approvazione.
-            \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano l'approvazione precedentemente selezionata. 
-            \item Scenario principale: l'utente deve selezionare lo stato della traduzione in "approvata" per eseguire la ricerca filtrata.
-        \end{itemize}
-    \subsubsection{UC 8.4 - Filtraggio per in "modifica"}
-        \begin{itemize}
-            \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
-            \item Precondizione: l'utente ha necessità di filtrare la ricerca effettuata per traduzioni in "modifica".
-            \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che sono nella lista da "modificare". 
-            \item Scenario principale: l'utente deve selezionare la stato della traduzione in "modifica" per eseguire la ricerca filtrata.
-        \end{itemize}
-    \subsubsection{UC 8.5 - Filtraggio per pubblicazione}
+    \subsubsection{UC 8.2 - Filtraggio per pubblicazione}
         \begin{itemize}
             \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
             \item Precondizione: l'utente ha necessità di filtrare la ricerca effetuata per pubblicazione.
             \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano la pubblicazione precedentemente selezionata. 
             \item Scenario principale: l'utente deve selezionare lo stato della traduzione in "pubblicata" per eseguire la ricerca filtrata.
         \end{itemize}
-\subsection{UC 9 - Pubblicazione di una traduzione}
+    \subsubsection{UC 8.3 - Filtraggio per in "modifica"}
         \begin{itemize}
-            \item Attore primario: utente admin.
-            \item Precondizione: l'utente admin ha necessità di pubblicare le traduzioni, le traduzioni possono essere pubblicate solo se passano l'approvazione. 
-            \item Postcondizione: l'utente admin ha pubblicato le traduzioni approvate.
-            \item Scenario principale: l'utente pubblica una traduzione.
+            \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
+            \item Precondizione: l'utente ha necessità di filtrare la ricerca effettuata per traduzioni in "modifica".
+            \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che sono nella lista da "modificare". 
+            \item Scenario principale: l'utente deve selezionare la stato della traduzione in "modifica" per eseguire la ricerca filtrata.
         \end{itemize}
-\subsection{UC 10 - Aggiunta cliente}
+\subsection{UC 10 - Aggiunta tenant}
     \begin{itemize}
         \item Attore primario: utente super admin(zero12).
-        \item Precondizione: l'utente ha necessità di aggiungere un nuovo cliente.
-        \item Postcondizione: l'utente ha aggiunto il cliente.
-        \item Scenario principale: l'utente inserisce il nuovo cliente.
+        \item Precondizione: l'utente ha necessità di aggiungere un nuovo tenant.
+        \item Postcondizione: l'utente ha aggiunto il tenant.
+        \item Scenario principale: l'utente inserisce il nuovo tenant.
         \item Flusso di eventi:
         \begin{enumerate}
-            \item L'utente inserisce il nome del nuovo cliente [UC 10.1].
+            \item L'utente inserisce il nome del nuovo tenant [UC 10.1].
             \item L'utente inserisce il numero di traduzioni disponibili [UC 10.2].
+            \item L'utente inserisce le lingue disponibili nel nuovo tenant [UC 10.3].
+            \item L'utente sceglie quale lingua mostrare di default nella dashboard del tenant [UC 10.4].
         \end{enumerate}
-    \end{itemize}
-    \subsubsection{UC 10.1 - Inserimento nome cliente}
+        \item Estensioni:
+            \begin{itemize}
+                \item La lingua di default da mostrare nella dashboard deve essere contenuta nelle lingue disponibili per il tenant.
+            \end{itemize}
+    \end{itemize}    
+    \subsubsection{UC 10.1 - Inserimento nome tenant}
         \begin{itemize}
             \item Attore primario: utente super admin(zero12).
-            \item Precondizione: l'utente ha necessità di inserire un cliente, la procedura di inserimento richiede il nome dell'azienda.
-            \item Postcondizione: l'utente ha inserito il nome del cliente.
-            \item Scenario principale: l'utente inserisce il nome del cliente.
+            \item Precondizione: l'utente ha necessità di inserire un tenant, la procedura di inserimento richiede il nome del progetto.
+            \item Postcondizione: l'utente ha inserito il nome del tenant.
+            \item Scenario principale: l'utente inserisce il nome del tenant.
             \item Estensioni: 
                 \begin{itemize}
-                    \item l'utente deve inserire obbligatoriamente il nome del cliente valido altrimenti viene visualizzato un messaggio d'errore.
+                    \item l'utente deve inserire obbligatoriamente il nome del tenant univoco con almeno un carattere altrimenti viene visualizzato un messaggio d'errore.
                 \end{itemize}
         \end{itemize}
     \subsubsection{UC 10.2 - Inserimento numero traduzioni disponibili}
@@ -435,24 +411,58 @@ In questa sezione verranno presentati gli use cases tracciati, che il software d
             \item Attore primario: utente super admin(zero12).
             \item Precondizione: l'utente ha necessità di inserire il numero delle traduzioni disponibili(si chiede una fatturazione per lo spazio su disco richiesto per salvare il numero di traduzioni richieste).
             \item Postcondizione: l'utente ha inserito il numero delle traduzioni.
-            \item Scenario principale: l'utente inscerisce il numero delle traduzioni a disponibilità del cliente.
+            \item Scenario principale: l'utente inscerisce il numero delle traduzioni a disponibilità del tenant.
             \item Estensioni: 
                 \begin{itemize}
                     \item l'utente deve inserire obbligatoriamente il numero delle traduzioni disponibili.
                 \end{itemize}
         \end{itemize}
-\subsection{UC 11 - Eliminazione cliente}
+        \subsubsection{UC 10.3 - Inserimento le lingue disponibili nel nuovo tenant}%??????????
+        \begin{itemize}
+            \item Attore primario: utente super admin(zero12).
+            \item Precondizione: l'utente ha necessità di inserire le lingue disponibili nel tenant.
+            \item Postcondizione: l'utente ha inserito le lingue disponibili nel tenant.
+            \item Scenario principale: l'utente inscerisce le lingue disponibili nel tenant.
+            \item Estensioni: 
+                \begin{itemize}
+                    \item l'utente deve inserire obbligatoriamente almeno due lingue.%??????????
+                \end{itemize}
+        \end{itemize}
+        \subsubsection{UC 10.4 - lingua default nella dashboard del tenant}
+        \begin{itemize}
+            \item Attore primario: utente super admin(zero12).
+            \item Precondizione: l'utente ha necessità di inserire la lingua di default nella dashboard del tenant.
+            \item Postcondizione: l'utente ha inserito la lingua di default nella dashboard del tenant.
+            \item Scenario principale: l'utente inscerisce la lingua di default nella dashboard del tenant.
+            \item Estensioni: 
+                \begin{itemize}
+                    \item l'utente deve inserire obbligatoriamente la lingua tra quelle disponibili nel tenant.
+                \end{itemize}
+        \end{itemize}
+\subsection{UC 11 Aggiunta lingua tenant}
     \begin{itemize}
         \item Attore primario: utente super admin(zero12).
-        \item Precondizione: l'utente ha necessità di eliminare un cliente.
-        \item Postcondizione: l'utente ha eliminato il cliente.
-        \item Scenario principale: l'utente inserisce il nome del cliente.
+        \item Precondizione: l'utente ha necessità di inserire una nuova la lingua nel tenant.
+        \item Postcondizione: l'utente ha inserito la nuova lingua nel tenant.
+        \item Scenario principale: l'utente inscerisce la nuova lingua nel tenant.
+        \item Flusso di eventi:
+            \begin{itemize}
+                \item L'utente scrive nel campo di testo la nuova lingua.
+                \item L'utente clicca su "Salva".
+            \end{itemize}
+        \end{itemize}
+\subsection{UC 12 - Eliminazione tenant}
+    \begin{itemize}
+        \item Attore primario: utente super admin(zero12).
+        \item Precondizione: l'utente ha necessità di eliminare un tenant.
+        \item Postcondizione: l'utente ha eliminato il tenant.
+        \item Scenario principale: l'utente inserisce il nome del tenant.
         \item Estensioni: 
         \begin{itemize}
-            \item L'utente deve inserire obbligatoriamente un nome di un cliente valido(presente nella lista dei clienti) altrimenti viene visualizzato un messaggio d'errore.
+            \item L'utente deve inserire obbligatoriamente un nome di un tenant valido(presente nella lista dei tenant) altrimenti viene visualizzato un messaggio d'errore.
         \end{itemize}
     \end{itemize}
-\subsection{UC 12 - Ricerca traduzione da libreria client}
+\subsection{UC 13 - Ricerca traduzione da libreria client}
     \begin{itemize}
         \item Attore primario: libreria client.
         \item Precondizione: libreria client ha necessità di ricercare una traduzione.
