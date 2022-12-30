@@ -95,13 +95,7 @@
             R1FA10.* & L'utente autenticato super admin alla creazione di un nuovo tenant vuole insereri il nome, il numero delle traduzioni disponibili, le lingue disponibili, la lingua di default da mostrare nella dashboard & \o & UC10.1 UC10.2 UC10.3 UC10.4\\
             R1FA11 & L'utente autenticato super admin vuole aggiungere una nuova lingua al tenant & \o & UC11\\
             R1FA12 & L'utente autenticato super admin vuole eliminare un tenant & \o & UC12\\
-            R1FA13 & La libreria cliente vuole richiedere una traduzione & \o & UC13\\
-
-
-
-
-
-            
+            R1FA13 & La libreria cliente vuole richiedere una traduzione & \o & UC13\\           
             
         \end{longtable}
         
@@ -109,6 +103,32 @@
 
 
 \subsection{Requisiti di vincolo}
+        \definecolor{lightgray}{RGB}{234, 234, 234}
+        \definecolor{darkblue}{RGB}{59,77,95}
+        \rowcolors{2}{lightgray}{white}
+        \renewcommand{\arraystretch}{1.5}
+        
+        \begin{longtable}{ l p{7cm} l p{3cm}}
+            \caption{Tabella dei Requisiti vincolo}\\
+            \rowcolor{darkblue}
+            \textcolor{white}{Identificativo} & \textcolor{white}{Descrizione} & \textcolor{white}{Classificazione} & \textcolor{white}{Fonti}\\	
+            \endfirsthead
+            \rowcolor{darkblue}
+            \textcolor{white}{Identificativo} & \textcolor{white}{Descrizione} & \textcolor{white}{Classificazione} & \textcolor{white}{Fonti}\\
+            \endhead
+            R1V1 & Il portale backoffice di gestione traduzioni dovrà funzionare su browser moderno & \o & capitolato\\
+            R1V2 & Il portale backoffice di gestione traduzioni dovrà garantire un supporto multi-tenant & \o & capitolato\\
+            R1V3 & Le API devono essere sviluppate in NodeJS & \o & capitolato\\
+            R1V4 & L'archittetura deve essere basata su micro-servizi & \o & capitolato\\
+            R1V5 & Il sistema dovrà sfruttare i servizi offerti da AWS & \o & capitolato\\
+            R1V6 & Il sistema dovrà sfruttare i servizi AWS Cognito & \o & capitolato\\
+            R1V7 & Il sistema dovrà sfruttare i servizi AWS DynamoDB & \o & capitolato\\
+            R1V8 & Il sistema dovrà sfruttare i servizi di calcolo AWS Lambda & \o & capitolato\\
+            R1V9 & Il sistema dovrà sfruttare i servizi AWS API Gateway & \o & capitolato\\
+            R1V10 & Il sistema dovrà sfruttare i servizi AWS Aurora Serverless & \o & capitolato\\
+        \end{longtable}
 \subsection{Requisiti di qualità}
 
+\subsection{Requisiti prestazionali}
+    Non sono stati individuati requisiti prestazionali per quanto riguarda i requisiti obbligatori. I servizi di    AWS utilizzati per realizzare la piattaforma non presentano problemi a livello di performance
 \subsection{Tracciamento requisiti}

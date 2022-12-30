@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.30)  30 DEC 2022 11:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.30)  30 DEC 2022 17:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -949,7 +949,7 @@ Package hyperref Info: Link coloring ON on input line 5.
 \openout4 = `analisi_dei_requisiti.out'.
 
  (../template/source/firstpage.tex
-<../template/img/logo.jpg, id=272, 326.21875pt x 195.73125pt>
+<../template/img/logo.jpg, id=276, 326.21875pt x 195.73125pt>
 File: ../template/img/logo.jpg Graphic file (type jpg)
 <use ../template/img/logo.jpg>
 Package pdftex.def Info: ../template/img/logo.jpg  used on input line 6.
@@ -1008,7 +1008,7 @@ Overfull \hbox (13.80145pt too wide) in paragraph at lines 9--10
  []
 
 ) (./sezioni/desGen.tex
-<../template/img/logo_header.jpg, id=379, 1066.98625pt x 617.30624pt>
+<../template/img/logo_header.jpg, id=386, 1066.98625pt x 617.30624pt>
 File: ../template/img/logo_header.jpg Graphic file (type jpg)
 <use ../template/img/logo_header.jpg>
 Package pdftex.def Info: ../template/img/logo_header.jpg  used on input line 17.
@@ -1272,7 +1272,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
 File: ../template/img/logo_header.jpg Graphic file (type jpg)
 <use ../template/img/logo_header.jpg>
-Package pdftex.def Info: ../template/img/logo_header.jpg  used on input line 106.
+Package pdftex.def Info: ../template/img/logo_header.jpg  used on input line 100.
 (pdftex.def)             Requested size: 28.45274pt x 16.45555pt.
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
@@ -1281,12 +1281,25 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-5.53558pt}.
 
-[15]))
+[15]
+Underfull \hbox (badness 3713) in paragraph at lines 121--121
+[]|\OT1/cmr/m/n/10.95 Le API de-vo-no es-se-re svi-lup-pa-te in
+ []
+
+
+Underfull \hbox (badness 5302) in paragraph at lines 122--122
+[]|\OT1/cmr/m/n/10.95 L'archittetura de-ve es-se-re ba-sa-ta su
+ []
+
+
+Underfull \hbox (badness 1117) in paragraph at lines 126--126
+[]|\OT1/cmr/m/n/10.95 Il si-ste-ma do-vr^^Ra sfrut-ta-re i ser-vi-zi di
+ []
+
 File: ../template/img/logo_header.jpg Graphic file (type jpg)
 <use ../template/img/logo_header.jpg>
-Package pdftex.def Info: ../template/img/logo_header.jpg  used on input line 40.
+Package pdftex.def Info: ../template/img/logo_header.jpg  used on input line 129.
 (pdftex.def)             Requested size: 28.45274pt x 16.45555pt.
-
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
 (fancyhdr)                Make it at least 20.53558pt, for example:
@@ -1294,7 +1307,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-5.53558pt}.
 
-[16]
+[16]))
 File: ../template/img/logo_header.jpg Graphic file (type jpg)
 <use ../template/img/logo_header.jpg>
 Package pdftex.def Info: ../template/img/logo_header.jpg  used on input line 40.
@@ -1311,21 +1324,21 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 AED: lastpage setting LastPage
 (./analisi_dei_requisiti.aux)
 Package rerunfilecheck Info: File `analisi_dei_requisiti.out' has not changed.
-(rerunfilecheck)             Checksum: 07A1BF1AF14EC3A4ADC025B9C62265C8;13410.
+(rerunfilecheck)             Checksum: 06D160D9FD9DF82BA49189BA49022854;13586.
  ) 
 Here is how much of TeX's memory you used:
- 35107 strings out of 474971
- 682345 string characters out of 5775130
- 1095232 words of memory out of 5000000
- 55850 multiletter control sequences out of 15000+600000
+ 35111 strings out of 474971
+ 682387 string characters out of 5775130
+ 1095297 words of memory out of 5000000
+ 55852 multiletter control sequences out of 15000+600000
  476652 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  120i,15n,121p,2418b,653s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {e:/programmi/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<e:/programmi/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><e:/programmi/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><e:/programmi/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><e:/programmi/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><e:/programmi/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><e:/programmi/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><e:/programmi/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on analisi_dei_requisiti.pdf (23 pages, 220295 bytes).
+Output written on analisi_dei_requisiti.pdf (23 pages, 222418 bytes).
 PDF statistics:
- 579 PDF objects out of 1000 (max. 8388607)
- 532 compressed objects within 6 object streams
- 134 named destinations out of 1000 (max. 500000)
- 551 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 586 PDF objects out of 1000 (max. 8388607)
+ 539 compressed objects within 6 object streams
+ 136 named destinations out of 1000 (max. 500000)
+ 559 words of extra memory for PDF output out of 10000 (max. 10000000)
 
