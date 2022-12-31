@@ -45,8 +45,7 @@ Il processo di fornitura determina ogni compito e attività necessaria allo svol
 \subsubsection{Rapporti con il proponente}
 \paragraph{Azienda}
 L’azienda Zero12 accompagna le aziende clienti in un percorso di innovazione che si pone i
-seguenti obiettivi: digitalizzare i processi, creare soluzioni software di engagement, semplici e
-indispensabili, per i clienti (interni o esterni). Tutto quello che l’azienda svolge è “Cloud Native\glo{}” e basato su tecnologia “Amazon Web Services\glo{} (AWS)”.
+seguenti obiettivi: digitalizzare i processi, creare soluzioni software di engagement, semplici e indispensabili, per i clienti (interni o esterni). Tutto quello che l’azienda svolge è “Cloud Native\glo{}” e basato su tecnologia “Amazon Web Services\glo{} (AWS)”.
 
 \paragraph{Materiale fornito}
 Zero12 ha fornito, oltre al capitolato, una lista delle tecnologie da utilizzare e consigliate per lo
@@ -98,21 +97,98 @@ I requisiti vengono raccolti attraverso le seguenti fasi:
 \begin{itemize}
 \item Lettura attenta del capitolato;
 \item Confronto interno con il gruppo;
-\item Confronto con il proponente;
+\item Confronto con il proponente.
 \end{itemize}
 Tali fasi permettono di analizzare nel modo più corretto possibile i requisiti ottenendo infine una conferma fondamentale e necessaria da parte del proponente.
 
 \paragraph{Classificazione dei requisiti}
+Rappresentano dei requisiti che deve soddisfare il prodotto che si vuole realizzare. I requisiti saranno
+organizzati in forma tabellare. La tabella avrà le seguenti tre colonne:
+\begin{itemize}
+\item Codice identificativo
+\item Classificazione
+\item Descrizione
+\item Fonti
+\end{itemize}
+Codice identificativo dei requisiti Ogni requisito sarà strutturato come segue:
+\begin{itemize}
+\item Codice identificativo: \textbf{R[Importanza][Tipologia][Codice]}
+\begin{itemize}
 
+\item Importanza:
+\begin{itemize}
+\item 1: Requisito obbligatorio, ovvero irrinunciabile per almeno uno degli stakeholder;
+\item 2: Requisito desiderabile, ovvero non strettamente necessario ma che porta valore aggiunto riconoscibile;
+\item 3: Requisito opzionale, ovvero relativamente utile oppure contrattabile più avanti nel progetto.
+\end{itemize}
+
+\item Tipologia:
+\begin{itemize}
+\item  F: Funzionale, definisce una funzione di un sistema di uno o più dei suoi componenti;
+\item Q: Qualitativo, definisce un requisito per garantire la qualità per un certo aspetto del progetto;
+\item P: Prestazionale, definisce un requisito che garantisce efficienza prestazionale nel prodotto;
+\item V: Vincolo, definisce un requisito volto a far rispettare un dato vincolo.
+\end{itemize}
+
+\item Codice: Composto da:
+\begin{itemize}
+\item A* se il requisito proviene da un caso d’uso dell’applicazione web di gestione, * sarà composto da il numero del caso d’uso;
+\item C* se il requisito viene dal capitolato, * sarà un numero progressivo univoco;
+\item I* se il requisito proviene da una decisione interna al gruppo, * sarà un numero;
+\item Z* se il requisito proviene da un incrontro con l’azienda.
+\end{itemize}
+
+\item Descrizione: descrizione sintetica del requisito.
+\item Classificazione: identifica l’importanza del requisito.
+\end{itemize}
+\end{itemize}
 
 \paragraph{Casi d'uso}
-
+Il caso d'uso consiste nel valutare ogni requisito focalizzandosi sugli attori che interagiscono col sistema, valutandone le varie interazioni. Vengono rappresentati graficamente tramite schemi UML\glo{}. \\ 
+\\
+Ciascun caso d'uso è costituito da:
+\begin{itemize}
+\item \textit{Attore primario}
+\item \textit{Precondizione}
+\item \textit{Postcondizione}
+\item \textit{Scenario principale}
+\item \textit{Flusso di eventi}
+\item \textit{Estensioni} (dove ritenute necessarie)
+\end{itemize}
 
 \paragraph{Classificazione dei casi d'uso}
+La struttura adottata per la classificazione dei casi d'uso è la seguente: \\ \\
+\textbf{UC[Identificatore][CodiceCasoBase](.[CodiceSottoCaso])*}
+\\ \\
+Composta da:
+\begin{itemize}
+\item \textbf{UC}: acronimo di "Use Case";
+\item \textbf{Identificatore}: che può assumere le diverse espressioni letterali:
+\begin{itemize}
+\item \textbf{W}: identifica un caso d'uso relativo alla WebApp;
+\item \textbf{E}: identifica un caso d'uso d'errore.
+\end{itemize}
+\item \textbf{CodiceCasoBase}: ID del caso d'uso generico;
+\item \textbf{CodiceSottoCaso}: ID opzionale per i sottocasi di un caso d'uso.
+\end{itemize}
 
-
-\paragraph{UML}
-
+Ogni caso d'uso è descritto da:
+\begin{itemize}
+\item \textbf{Id}: codice identificativo del caso d'uso, stabilito come enunciato sopra;
+\item \textbf{Nome}: stringa titolo del caso d'uso posta dopo l'id;
+\item \textbf{Diagramma UML}: diagramma per rappresentare graficamente il caso d'uso;
+\item \textbf{Descrizione}: breve descrizione del caso d'uso;
+\item \textbf{Attori}: entità esterne al sistema che interagiscono con esso. Ne esistono due varianti:
+\begin{itemize}
+\item \textbf{Primario}: interagisce con il sistema per raggiungere un obiettivo;
+\item \textbf{Secondario}: aiuta il primario a raggiungere l'obiettivo. Non utilizzato.
+\end{itemize}
+\item \textbf{Precondizione}: descrive lo stato del sistema prima del verificarsi del caso d'uso;
+\item \textbf{Postcondizione}: descrive lo stato del sistema dopo che si è verificato il caso d'uso;
+\item \textbf{Scenario principale}: elenco numerato che descrive il flusso degli eventi del caso d'uso;
+\item \textbf{Scenario secondario/alternativo}: elenco numerato che descrive il flusso degli eventi del caso d'uso dopo un evento imprevisto che lo ha deviato dal caso principale. Può non esserci o possono esserci più di uno;
+\item \textbf{Estensioni}: utilizzate negli scenari alternativi. Se si verifica una determinata situazione, il caso d'uso collegato all'estensione viene interrotto.
+\end{itemize}
 
 \subsubsection{Progettazione}
 Lo scopo della progettazione è quello di determinare le caratteristiche che il prodotto finale deve avere, incorporando le parti ottenute durante l'analisi dei requisiti.
@@ -130,8 +206,33 @@ Questa fase illustra le linee guida architetturali del prodotto. Oltre all’evo
 \subsubsection{Codifica}
 Sezione che verrà sviluppata durante la fase di codifica dell'applicativo software..
 
+\pagebreak
+
 \section{Processi di Supporto}
 \subsection{Documentazione}
+\subsubsection{Informazioni sul documento}
+La prima pagina di ogni documento, fatta eccezione per i verbali, riporta le seguenti informazioni:
+\begin{itemize}
+\item \textit{Responsabile}: indica il nome del responsabile in quel preciso momento;
+\item \textit{Redattori}: indica chi si è occupato della redazione del documento;
+\item \textit{Verificatori}: indica chi sono stati i verificatori in quel preciso documento;
+\item \textit{Uso}: indica se il documento è destinato a uso interno o esterno;
+\item \textit{Destinatari}: indica a chi è destinato il documento;
+\end{itemize}
+
+\subsubsection{Registro delle modifiche}
+Il file \textit{changelog.tex} contiene il registro delle modifiche, presente in ogni singolo documento, eccezione fatta per i verbali. 
+Il registro delle modifiche tiene traccia delle attività effettuate al documento (es. modifica, verifica, approvazione) e, in particolare, è caratterizzato da:
+\begin{itemize}
+\item Versione
+\item Data
+\item Autore
+\item Ruolo
+\item Descrizione
+\end{itemize}
+
+Tale registro è sempre aggiornato all'ultima attività effettuata sul documento.
+
 \subsubsection{Verbali}
 Si è deciso di creare un template per i verbali interni ed esterni in modo da facilitare notevolmente la loro compilazione. Tale template viene messo a disposizione nello spazio di archiviazione  Google Drive\glo{} collegato alla mail del gruppo, in modo che possa essere reperito da chi incaricato per la stesura di un nuovo verbale.
 I verbali hanno il compito di riassumere quanto discusso nel relativo meeting in modo che possa essere recuperato anche da chi non era presente a quell'incontro.
@@ -146,10 +247,10 @@ I verbali interni sono dedicati alle discussioni dei \groupName{}, effettuate al
 I verbali esterni sono dedicati agli incontri con il proponente.
 Tali incontri potranno essere richiesti dai \groupName{}, qualora fosse ritenuto necessario esporre a Zero12 dei quesiti riguardo il progetto, oppure potranno essere richiesti dal proponente stesso.
 
-\subsubsection{Strumenti per la stesura}
+\subsubsection{Strumenti per la stesura e template}
 Per quanto riguarda la stesura della documentazione si sono adottati diversi strumenti in base allo specifico documento e alle necessità che esso presenta. 
 Si riportano qui di seguito i diversi software utilizzati in
-questo ambito: Google Docs\glo{}, riservato alla stesura dei verbali interni ed esterni; e LaTeX\glo{} per la
+questo ambito: \textit{Google Docs}\glo{}, riservato alla stesura dei verbali interni ed esterni; e \textit{LaTeX}\glo{} per la
 stesura della documentazione principale, tra cui: 
 \begin{itemize}
 \item \docNameNdP{};
@@ -182,30 +283,40 @@ redattore della parte in verifica. Una volta verificata la sezione in esame sar�
 incrementare il numero Y, il quale indicherà poi lo stato della verifica.
 
 \subsubsection{Approvazione}
-Per poter essere approvato, uno specifico documento deve raggiungere quantomeno la
-versione 1.0.0 che indica che il documento è stato approvato e può essere rilasciato per la
-prima volta.
+Per poter essere approvato, uno specifico documento deve raggiungere quantomeno la versione 1.0.0 che indica che il documento è stato approvato e può essere rilasciato per la prima volta.
+
+\pagebreak
 
 \section{Processi Organizzativi}
 \subsection{Gestione Organizzativa}
 
 \subsubsection{Scopo}
+Lo scopo di questa sezione è quello di normare le modalità di gestione interna del gruppo.
 
 \subsubsection{Descrizione}
+La gestione organizzativa definisce il \textit{way of working} adottato dai \groupName{} durante tutte le attività di progetto.
 
 \subsubsection{Ruoli di Progetto}
+Ogni membro dei \groupName{} è tenuto a occupare almeno una volta tutti i ruoli, come definito nel preventivo dei costi, e a farsi carico delle responsabilità che ne derivano. 
+I ruoli ruotano in corrispondenza delle necessità del momento.
+
 \paragraph{Responsabile di progetto}
+Il suo compito è quello di rappresentare il gruppo all'esterno e di assicurarsi che tutte le attività vengano svolte correttamente ed entro i tempi prestabiliti.
 
 \paragraph{Amministratore}
+Il suo compito è quello di occuparsi del funzionamento e sviluppo degli strumenti tecnologici utilizzati dal gruppo.
 
 \paragraph{Analista}
+Il suo compito è quello di individuare, analizzare e stilare i diversi servizi che il prodotto finale deve presentare.
 
 \paragraph{Progettista}
+Il suo compito è quello di definire la struttura architetturale del sistema, basandosi da quanto prodotto nella fase di analisi dei requisiti.
 
 \paragraph{Programmatore}
+Il suo compito è la scrittura del codice necessario al funzionamento del prodotto software.
 
 \paragraph{Verificatore}
-
+Il suo compito è quello di verificare quanto prodotto durante le attività di progetto, tra cui: documentazione e codice.
 
 \subsubsection{Strumenti collaborativi}
 \paragraph{GitHub}
@@ -223,12 +334,16 @@ All'interno di Youtrack sono presenti i Projects che rappresentano macro task da
 Per avere una visione d'insieme dell'avanzamento del progetto software sono presenti le "Agile boards\glo{}" e "Gantt chart\glo{}". I quali insieme all'integrata funzione di tracciamento del tempo, a colpo d'occhio, si è in grado di verificare l'avanzamento del progetto.
 Tutte queste funzioni sono automatizzate e gestite dalla piattaforma. Questo permette ai componenti del gruppo di concentrarsi nello sviluppo invece che nella gestione del progetto.
 
-\subsection{Gestione degli incontri}
+\subsection{Comunicazione}
 \subsubsection{Piattaforma}
 Come luoghi di incontro vengono utilizzate due piattaforme in base alla tipologia di incontri da effettuare; Discord\glo{} per gli incontri interni e, generalmente, Google Meet\glo{} per gli incontri con il proponente.
 
 \subsubsection{Date}
 Tenendo conto degli impegni individuali di ciascun membro dei \groupName{} si è deciso di effettuare quantomeno un incontro interno settimanale, con data e ora da decidersi, per discutere dei progressi fatti e per fissare ciò che si dovrà fare di settimana in settimana. Tale incontro verrà fissato tramite il canale Telegram\glo{} del gruppo; se per qualche motivo alcuni membri non riuscissero a parteciparvi, saranno informati attraverso Telegram e per entrare nel dettaglio potranno recuperare il relativo verbale.
+\\ \\
+Per quanto riguardo gli incontri esterni, essi verranno svolti quando ritenuti necessari dal gruppo o dal proponente e la data verrà concordata rispettivamente tra i membri del gruppo o tra i \groupName{} e il proponente. 
 
 \subsubsection{Argomenti}
-Ogni incontro viene suddiviso in tre parti principali: la prima in cui si aggiorna il gruppo su quanto svolto individualmente fino a quel momento; la seconda in cui si decide cosa fare nel prossimo periodo, assegnando delle priorità alle diverse "cose da fare"; e la terza dedicata a domande o dubbi su come procedere.
+Ogni incontro interno viene suddiviso in tre parti principali: la prima in cui si aggiorna il gruppo su quanto svolto individualmente fino a quel momento; la seconda in cui si decide cosa fare nel prossimo periodo, assegnando delle priorità alle diverse "cose da fare"; e la terza dedicata a domande o dubbi su come procedere.
+\\ \\
+Gli argomenti degli incontri esterni verranno invece discussi in seduta comune in modo da illustrare in maniera ottimale eventuali problematiche o idee al proponente.

@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.28)  28 DEC 2022 20:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.18)  31 DEC 2022 17:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **norme_di_progetto.tex
 (./norme_di_progetto.tex
-LaTeX2e <2022-11-01>
-L3 programming layer <2022-11-02> (../template/source/packages.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2022-12-17> (../template/source/packages.tex
 (c:/texlive/2022/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
 (c:/texlive/2022/texmf-dist/tex/latex/base/size11.clo
@@ -19,8 +19,8 @@ File: size11.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 \c@subparagraph=\count190
 \c@figure=\count191
 \c@table=\count192
-\abovecaptionskip=\skip47
-\belowcaptionskip=\skip48
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
 \bibindent=\dimen140
 )
 (c:/texlive/2022/texmf-dist/tex/latex/base/inputenc.sty
@@ -29,7 +29,7 @@ Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@posthook=\toks17
 )
 (c:/texlive/2022/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2022/10/23 3.82 The Babel package
+Package: babel 2022/11/30 3.83 The Babel package
 \babel@savecnt=\count193
 \U@D=\dimen141
 \l@unhyphenated=\language87
@@ -116,12 +116,12 @@ Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
 \ar@mcellbox=\box51
 \extrarowheight=\dimen159
 \NC@list=\toks20
-\extratabsurround=\skip49
-\backup@length=\skip50
+\extratabsurround=\skip50
+\backup@length=\skip51
 \ar@cellbox=\box52
 )
 \everycr=\toks21
-\minrowclearance=\skip51
+\minrowclearance=\skip52
 \rownum=\count270
 )
 (c:/texlive/2022/texmf-dist/tex/latex/graphics/mathcolor.ltx)
@@ -137,10 +137,10 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 )
 (c:/texlive/2022/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
-\LTleft=\skip52
-\LTright=\skip53
-\LTpre=\skip54
-\LTpost=\skip55
+\LTleft=\skip53
+\LTright=\skip54
+\LTpre=\skip55
+\LTpost=\skip56
 \LTchunksize=\count271
 \LTcapwidth=\dimen160
 \LT@head=\box53
@@ -157,15 +157,15 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 (c:/texlive/2022/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 
-\f@nch@headwidth=\skip56
-\f@nch@O@elh=\skip57
-\f@nch@O@erh=\skip58
-\f@nch@O@olh=\skip59
-\f@nch@O@orh=\skip60
-\f@nch@O@elf=\skip61
-\f@nch@O@erf=\skip62
-\f@nch@O@olf=\skip63
-\f@nch@O@orf=\skip64
+\f@nch@headwidth=\skip57
+\f@nch@O@elh=\skip58
+\f@nch@O@erh=\skip59
+\f@nch@O@olh=\skip60
+\f@nch@O@orh=\skip61
+\f@nch@O@elf=\skip62
+\f@nch@O@erf=\skip63
+\f@nch@O@olf=\skip64
+\f@nch@O@orf=\skip65
 )
 (c:/texlive/2022/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
@@ -520,7 +520,7 @@ Package: datatool-base 2019/09/27 v2.32 (NLCT)
 
 (c:/texlive/2022/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2022/04/08 v2.17n AMS math features
-\@mathmargin=\skip65
+\@mathmargin=\skip66
 
 For additional information on amsmath, use the `?' option.
 (c:/texlive/2022/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -580,8 +580,8 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \totwidth@=\dimen281
 \lineht@=\dimen282
 \@envbody=\toks45
-\multlinegap=\skip66
-\multlinetaggap=\skip67
+\multlinegap=\skip67
+\multlinetaggap=\skip68
 \mathdisplay@stack=\toks46
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
@@ -643,7 +643,7 @@ Package: fp-eval 1995/04/03
 )))
 \@dtl@toks=\toks47
 \@dtl@tmpcount=\count334
-\dtl@tmplength=\skip68
+\dtl@tmplength=\skip69
 \dtl@sortresult=\count335
 \@dtl@numgrpsepcount=\count336
 \@dtl@datatype=\count337
@@ -652,7 +652,7 @@ Package: fp-eval 1995/04/03
 \@dtl@foreach@level=\count340
 )
 (c:/texlive/2022/texmf-dist/tex/latex/tracklang/tracklang.sty
-Package: tracklang 2022/10/29 v1.6 (NLCT) Track Languages
+Package: tracklang 2022/12/13 v1.6.1 (NLCT) Track Languages
 
 (c:/texlive/2022/texmf-dist/tex/generic/tracklang/tracklang.tex))
 (c:/texlive/2022/texmf-dist/tex/latex/translator/translator.sty
@@ -663,7 +663,7 @@ File: glossaries-italian.ldf 2014/11/23 v1.0
 )
 \gls@level=\count341
 \@gls@tmpb=\toks48
-\gls@tmplen=\skip69
+\gls@tmplen=\skip70
 \glskeylisttok=\toks49
 \glslabeltok=\toks50
 \glsshorttok=\toks51
@@ -672,12 +672,12 @@ File: glossaries-italian.ldf 2014/11/23 v1.0
 Package: glossary-hypernav 2022/11/03 v4.52 (NLCT)
 ) (c:/texlive/2022/texmf-dist/tex/latex/glossaries/styles/glossary-list.sty
 Package: glossary-list 2022/11/03 v4.52 (NLCT)
-\glslistdottedwidth=\skip70
+\glslistdottedwidth=\skip71
 )
 (c:/texlive/2022/texmf-dist/tex/latex/glossaries/styles/glossary-long.sty
 Package: glossary-long 2022/11/03 v4.52 (NLCT)
-\glsdescwidth=\skip71
-\glspagelistwidth=\skip72
+\glsdescwidth=\skip72
+\glspagelistwidth=\skip73
 )
 (c:/texlive/2022/texmf-dist/tex/latex/glossaries/styles/glossary-super.sty
 Package: glossary-super 2022/11/03 v4.52 (NLCT)
@@ -686,9 +686,9 @@ Package: glossary-super 2022/11/03 v4.52 (NLCT)
 Package: supertabular 2020/02/02 v4.1g the supertabular environment
 \c@tracingst=\count342
 \ST@wd=\dimen283
-\ST@rightskip=\skip73
-\ST@leftskip=\skip74
-\ST@parfillskip=\skip75
+\ST@rightskip=\skip74
+\ST@leftskip=\skip75
+\ST@parfillskip=\skip76
 \ST@pageleft=\dimen284
 \ST@headht=\dimen285
 \ST@tailht=\dimen286
@@ -702,7 +702,7 @@ Package: supertabular 2020/02/02 v4.1g the supertabular environment
 ))
 (c:/texlive/2022/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
 Package: glossary-tree 2022/11/03 v4.52 (NLCT)
-\glstreeindent=\skip76
+\glstreeindent=\skip77
 ))
 (c:/texlive/2022/texmf-dist/tex/latex/lastpage/lastpage.sty
 Package: lastpage 2021/09/03 v1.2n Refers to last page's name (HMM; JPG)
@@ -784,18 +784,18 @@ Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Bcount=\count348
 \calc@Adimen=\dimen293
 \calc@Bdimen=\dimen294
-\calc@Askip=\skip77
-\calc@Bskip=\skip78
+\calc@Askip=\skip78
+\calc@Bskip=\skip79
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count349
-\calc@Cskip=\skip79
+\calc@Cskip=\skip80
 )
 \c@@stackindex=\count350
-\@boxshift=\skip80
-\stack@tmplength=\skip81
-\temp@stkl=\skip82
-\@stackedboxwidth=\skip83
+\@boxshift=\skip81
+\stack@tmplength=\skip82
+\temp@stkl=\skip83
+\@stackedboxwidth=\skip84
 \@addedbox=\box78
 \@anchorbox=\box79
 \@insetbox=\box80
@@ -812,7 +812,7 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \LstrutTABtoks=\toks55
 \RstrutTABtoks=\toks56
 \TAB@toks=\toks57
-\TABruleshift=\skip84
+\TABruleshift=\skip85
 )
 (c:/texlive/2022/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
@@ -828,7 +828,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
 (c:/texlive/2022/texmf-dist/tex/latex/tabularray/tabularray.sty
 (c:/texlive/2022/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2022-11-02 L3 programming layer (loader) 
+Package: expl3 2022-12-17 L3 programming layer (loader) 
 
 (c:/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
@@ -1043,7 +1043,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 85.
 )
-\Hy@SectionHShift=\skip85
+\Hy@SectionHShift=\skip86
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 34.
 )
@@ -1157,7 +1157,7 @@ Package: ninecolors 2022-02-13 vv2022D Select colors with proper color contrast
 
 
 (c:/texlive/2022/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2022-06-22 L3 Experimental document command parser
+Package: xparse 2022-12-17 L3 Experimental document command parser
 ))
 Package hyperref Info: Link coloring ON on input line 5.
 
@@ -1167,7 +1167,7 @@ Package hyperref Info: Link coloring ON on input line 5.
 
 
 (../template/source/firstpage.tex
-<../template/img/logo.jpg, id=256, 326.21875pt x 195.73125pt>
+<../template/img/logo.jpg, id=260, 326.21875pt x 195.73125pt>
 File: ../template/img/logo.jpg Graphic file (type jpg)
 <use ../template/img/logo.jpg>
 Package pdftex.def Info: ../template/img/logo.jpg  used on input line 6.
@@ -1183,57 +1183,7 @@ Package pdftex.def Info: ../template/img/logo.jpg  used on input line 6.
 > Step: parse table inner spec.
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
-
-Underfull \hbox (badness 1117) in paragraph at lines 37--37
-[]\OT1/cmr/m/n/10.95 Aggiornate le se-zio-ni 2.2
- []
-
-
-Underfull \hbox (badness 4156) in paragraph at lines 37--37
-\OT1/cmr/m/n/10.95 (da-te dei mee-ting), 3.1
- []
-
-
-Underfull \hbox (badness 1221) in paragraph at lines 37--37
-\OT1/cmr/m/n/10.95 ni) e 4.1 (or-ga-niz-za-zio-ne
- []
-
-
-Underfull \hbox (badness 4217) in paragraph at lines 37--37
-[]\OT1/cmr/m/n/10.95 Definizione del ver-sio-na-
- []
-
-
-Underfull \hbox (badness 1478) in paragraph at lines 37--37
-[]\OT1/cmr/m/n/10.95 Creazione del do-cu-men-to
- []
-
 > Step: build the whole table.
-
-Underfull \hbox (badness 1117) in paragraph at lines 37--37
-[]\OT1/cmr/m/n/10.95 Aggiornate le se-zio-ni 2.2
- []
-
-
-Underfull \hbox (badness 4156) in paragraph at lines 37--37
-\OT1/cmr/m/n/10.95 (da-te dei mee-ting), 3.1
- []
-
-
-Underfull \hbox (badness 1221) in paragraph at lines 37--37
-\OT1/cmr/m/n/10.95 ni) e 4.1 (or-ga-niz-za-zio-ne
- []
-
-
-Underfull \hbox (badness 4217) in paragraph at lines 37--37
-[]\OT1/cmr/m/n/10.95 Definizione del ver-sio-na-
- []
-
-
-Underfull \hbox (badness 1478) in paragraph at lines 37--37
-[]\OT1/cmr/m/n/10.95 Creazione del do-cu-men-to
- []
-
 )
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
@@ -1245,7 +1195,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.50 ...4.1.2}Descrizione}{6}{subsubsection.4.1.2}
+l.50 ...line {4.1.1}Scopo}{9}{subsubsection.4.1.1}
                                                   % [3])
 \tf@toc=\write5
 \openout5 = `norme_di_progetto.toc'.
@@ -1257,7 +1207,7 @@ een already used, duplicate ignored
                    \relax 
 l.35 
       [4] (./contenuto/contenuto.tex
-<../template/img/logo_header.jpg, id=348, 1066.98625pt x 617.30624pt>
+<../template/img/logo_header.jpg, id=353, 1066.98625pt x 617.30624pt>
 File: ../template/img/logo_header.jpg Graphic file (type jpg)
 <use ../template/img/logo_header.jpg>
 Package pdftex.def Info: ../template/img/logo_header.jpg  used on input line 35
@@ -1275,7 +1225,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 [1 <../template/img/logo_header.jpg>]
 File: ../template/img/logo_header.jpg Graphic file (type jpg)
 <use ../template/img/logo_header.jpg>
-Package pdftex.def Info: ../template/img/logo_header.jpg  used on input line 74
+Package pdftex.def Info: ../template/img/logo_header.jpg  used on input line 73
 .
 (pdftex.def)             Requested size: 28.45274pt x 16.45555pt.
 
@@ -1290,7 +1240,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 [2]
 File: ../template/img/logo_header.jpg Graphic file (type jpg)
 <use ../template/img/logo_header.jpg>
-Package pdftex.def Info: ../template/img/logo_header.jpg  used on input line 12
+Package pdftex.def Info: ../template/img/logo_header.jpg  used on input line 11
 0.
 (pdftex.def)             Requested size: 28.45274pt x 16.45555pt.
 
@@ -1303,12 +1253,25 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-5.53558pt}.
 
 [3]
+Underfull \hbox (badness 10000) in paragraph at lines 147--150
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--164
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--164
+
+ []
+
 File: ../template/img/logo_header.jpg Graphic file (type jpg)
 <use ../template/img/logo_header.jpg>
-Package pdftex.def Info: ../template/img/logo_header.jpg  used on input line 14
-8.
+Package pdftex.def Info: ../template/img/logo_header.jpg  used on input line 16
+4.
 (pdftex.def)             Requested size: 28.45274pt x 16.45555pt.
-
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
 (fancyhdr)                Make it at least 20.53558pt, for example:
@@ -1320,8 +1283,8 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 [4]
 File: ../template/img/logo_header.jpg Graphic file (type jpg)
 <use ../template/img/logo_header.jpg>
-Package pdftex.def Info: ../template/img/logo_header.jpg  used on input line 21
-7.
+Package pdftex.def Info: ../template/img/logo_header.jpg  used on input line 20
+2.
 (pdftex.def)             Requested size: 28.45274pt x 16.45555pt.
 
 
@@ -1335,8 +1298,8 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 [5]
 File: ../template/img/logo_header.jpg Graphic file (type jpg)
 <use ../template/img/logo_header.jpg>
-Package pdftex.def Info: ../template/img/logo_header.jpg  used on input line 23
-2.
+Package pdftex.def Info: ../template/img/logo_header.jpg  used on input line 21
+0.
 (pdftex.def)             Requested size: 28.45274pt x 16.45555pt.
 
 
@@ -1347,7 +1310,62 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-5.53558pt}.
 
-[6]) 
+[6]
+File: ../template/img/logo_header.jpg Graphic file (type jpg)
+<use ../template/img/logo_header.jpg>
+Package pdftex.def Info: ../template/img/logo_header.jpg  used on input line 25
+5.
+(pdftex.def)             Requested size: 28.45274pt x 16.45555pt.
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 20.53558pt, for example:
+(fancyhdr)                \setlength{\headheight}{20.53558pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-5.53558pt}.
+
+[7]
+File: ../template/img/logo_header.jpg Graphic file (type jpg)
+<use ../template/img/logo_header.jpg>
+Package pdftex.def Info: ../template/img/logo_header.jpg  used on input line 28
+9.
+(pdftex.def)             Requested size: 28.45274pt x 16.45555pt.
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 20.53558pt, for example:
+(fancyhdr)                \setlength{\headheight}{20.53558pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-5.53558pt}.
+
+[8]
+File: ../template/img/logo_header.jpg Graphic file (type jpg)
+<use ../template/img/logo_header.jpg>
+Package pdftex.def Info: ../template/img/logo_header.jpg  used on input line 32
+8.
+(pdftex.def)             Requested size: 28.45274pt x 16.45555pt.
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 20.53558pt, for example:
+(fancyhdr)                \setlength{\headheight}{20.53558pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-5.53558pt}.
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 342--345
+
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 347--41
+
+ []
+
+
 AED: lastpage setting LastPage
 File: ../template/img/logo_header.jpg Graphic file (type jpg)
 <use ../template/img/logo_header.jpg>
@@ -1362,18 +1380,18 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-5.53558pt}.
 
-[7] (./norme_di_progetto.aux)
+[10] (./norme_di_progetto.aux)
 Package rerunfilecheck Info: File `norme_di_progetto.out' has not changed.
-(rerunfilecheck)             Checksum: 4659F37C9C5DD92DC285418BB9D9CFD1;8452.
+(rerunfilecheck)             Checksum: 272E0F4D2AAF62B258A85765E7AD641A;8769.
  ) 
 Here is how much of TeX's memory you used:
- 35014 strings out of 474971
- 676335 string characters out of 5780120
- 1087167 words of memory out of 5000000
- 55834 multiletter control sequences out of 15000+600000
- 476876 words of font info for 52 fonts, out of 8000000 for 9000
+ 35038 strings out of 476093
+ 677118 string characters out of 5795582
+ 1878787 words of memory out of 5000000
+ 54732 multiletter control sequences out of 15000+600000
+ 519983 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 120i,15n,121p,2303b,797s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 120i,15n,121p,2303b,890s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/tex
 live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-di
@@ -1381,10 +1399,10 @@ st/fonts/type1/public/amsfonts/cm/cmbx6.pfb><c:/texlive/2022/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmti10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-supe
 r/sfrm1095.pfb>
-Output written on norme_di_progetto.pdf (11 pages, 192408 bytes).
+Output written on norme_di_progetto.pdf (14 pages, 206460 bytes).
 PDF statistics:
- 437 PDF objects out of 1000 (max. 8388607)
- 405 compressed objects within 5 object streams
- 76 named destinations out of 1000 (max. 500000)
- 519 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 459 PDF objects out of 1000 (max. 8388607)
+ 424 compressed objects within 5 object streams
+ 80 named destinations out of 1000 (max. 500000)
+ 527 words of extra memory for PDF output out of 10000 (max. 10000000)
 
