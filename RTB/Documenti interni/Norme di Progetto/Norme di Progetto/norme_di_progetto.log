@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.18)  2 JAN 2023 11:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.18)  2 JAN 2023 12:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1314,7 +1314,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 File: ../template/img/logo_header.jpg Graphic file (type jpg)
 <use ../template/img/logo_header.jpg>
 Package pdftex.def Info: ../template/img/logo_header.jpg  used on input line 25
-5.
+4.
 (pdftex.def)             Requested size: 28.45274pt x 16.45555pt.
 
 
@@ -1329,7 +1329,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 File: ../template/img/logo_header.jpg Graphic file (type jpg)
 <use ../template/img/logo_header.jpg>
 Package pdftex.def Info: ../template/img/logo_header.jpg  used on input line 28
-9.
+8.
 (pdftex.def)             Requested size: 28.45274pt x 16.45555pt.
 
 
@@ -1344,7 +1344,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 File: ../template/img/logo_header.jpg Graphic file (type jpg)
 <use ../template/img/logo_header.jpg>
 Package pdftex.def Info: ../template/img/logo_header.jpg  used on input line 32
-8.
+7.
 (pdftex.def)             Requested size: 28.45274pt x 16.45555pt.
 
 
@@ -1356,12 +1356,12 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-5.53558pt}.
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 342--345
+Underfull \hbox (badness 10000) in paragraph at lines 341--344
 
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 347--41
+Underfull \hbox (badness 10000) in paragraph at lines 346--41
 
  []
 
@@ -1399,7 +1399,7 @@ st/fonts/type1/public/amsfonts/cm/cmbx6.pfb><c:/texlive/2022/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmti10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-supe
 r/sfrm1095.pfb>
-Output written on norme_di_progetto.pdf (14 pages, 207251 bytes).
+Output written on norme_di_progetto.pdf (14 pages, 207245 bytes).
 PDF statistics:
  459 PDF objects out of 1000 (max. 8388607)
  424 compressed objects within 5 object streams
