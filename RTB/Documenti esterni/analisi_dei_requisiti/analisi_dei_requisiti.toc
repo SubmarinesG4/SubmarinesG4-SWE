@@ -30,40 +30,50 @@
 \contentsline {paragraph}{\numberline {4.2.2.1}UC 1.2.1 - Inserimento indirizzo email}{5}{paragraph.4.2.2.1}%
 \contentsline {paragraph}{\numberline {4.2.2.2}UC 1.2.2 - Inserimento password}{5}{paragraph.4.2.2.2}%
 \contentsline {subsubsection}{\numberline {4.2.3}UC 1.3 - Password dimenticata}{5}{subsubsection.4.2.3}%
-\contentsline {paragraph}{\numberline {4.2.3.1}UC 1.3.1 - Inserimento indirizzo email per il reset}{5}{paragraph.4.2.3.1}%
+\contentsline {paragraph}{\numberline {4.2.3.1}UC 1.3.1 - Inserimento indirizzo email per il reset}{6}{paragraph.4.2.3.1}%
 \contentsline {paragraph}{\numberline {4.2.3.2}UC 1.3.2 - Inserimento nuova password}{6}{paragraph.4.2.3.2}%
 \contentsline {paragraph}{\numberline {4.2.3.3}UC 1.3.3 - Reinserimento password}{6}{paragraph.4.2.3.3}%
-\contentsline {subsection}{\numberline {4.3}UC 2 - Area personale}{6}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}UC 2.1 - Logout}{6}{subsubsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3}UC 2 - Area personale}{7}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}UC 2.1 - Logout}{7}{subsubsection.4.3.1}%
 \contentsline {subsubsection}{\numberline {4.3.2}UC 2.2 - Cambio password}{7}{subsubsection.4.3.2}%
 \contentsline {paragraph}{\numberline {4.3.2.1}UC 2.2.1 - Inserimento password vecchia}{7}{paragraph.4.3.2.1}%
-\contentsline {paragraph}{\numberline {4.3.2.2}UC 2.2.2 - Inserimento password nuova}{7}{paragraph.4.3.2.2}%
-\contentsline {paragraph}{\numberline {4.3.2.3}UC 2.2.3 - Conferma password}{7}{paragraph.4.3.2.3}%
+\contentsline {paragraph}{\numberline {4.3.2.2}UC 2.2.2 - Inserimento password nuova}{8}{paragraph.4.3.2.2}%
+\contentsline {paragraph}{\numberline {4.3.2.3}UC 2.2.3 - Conferma password}{8}{paragraph.4.3.2.3}%
 \contentsline {subsection}{\numberline {4.4}UC 3 - Inserimento nuova traduzione}{8}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}UC 4 - Revisione traduzione}{8}{subsection.4.5}%
-\contentsline {subsubsection}{\numberline {4.5.1}UC 4.1 - Pubblicazione}{8}{subsubsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5}UC 4 - Revisione traduzione}{9}{subsection.4.5}%
+\contentsline {subsubsection}{\numberline {4.5.1}UC 4.1 - Pubblicazione}{9}{subsubsection.4.5.1}%
 \contentsline {subsubsection}{\numberline {4.5.2}UC 4.2 - Traduzione da modificare}{9}{subsubsection.4.5.2}%
 \contentsline {subsection}{\numberline {4.6}UC 5 - Modifica traduzione}{9}{subsection.4.6}%
-\contentsline {subsection}{\numberline {4.7}UC 6 - Elimina traduzione}{9}{subsection.4.7}%
-\contentsline {subsection}{\numberline {4.8}UC 7 - Versionamento}{9}{subsection.4.8}%
-\contentsline {subsection}{\numberline {4.9}UC 7 - Ricerca}{10}{subsection.4.9}%
-\contentsline {subsubsection}{\numberline {4.9.1}UC 7.1 - Ricerca per id univoco}{10}{subsubsection.4.9.1}%
-\contentsline {subsubsection}{\numberline {4.9.2}UC 7.1 - Ricerca per parola}{10}{subsubsection.4.9.2}%
-\contentsline {subsection}{\numberline {4.10}UC 8 - Filtraggio ricerca}{11}{subsection.4.10}%
-\contentsline {subsubsection}{\numberline {4.10.1}UC 8.1 - Filtraggio per data di creazione}{11}{subsubsection.4.10.1}%
-\contentsline {subsubsection}{\numberline {4.10.2}UC 8.2 - Filtraggio per pubblicazione}{11}{subsubsection.4.10.2}%
-\contentsline {subsubsection}{\numberline {4.10.3}UC 8.3 - Filtraggio per in "modifica"}{11}{subsubsection.4.10.3}%
+\contentsline {subsection}{\numberline {4.7}UC 6 - Elimina traduzione}{10}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.8}UC 7 - Versionamento}{10}{subsection.4.8}%
+\contentsline {subsection}{\numberline {4.9}UC 8 - Ricerca}{10}{subsection.4.9}%
+\contentsline {subsubsection}{\numberline {4.9.1}UC 8.1 - Ricerca per id univoco}{11}{subsubsection.4.9.1}%
+\contentsline {subsubsection}{\numberline {4.9.2}UC 8.2 - Ricerca per parola}{11}{subsubsection.4.9.2}%
+\contentsline {subsection}{\numberline {4.10}UC 9 - Filtraggio ricerca}{11}{subsection.4.10}%
+\contentsline {subsubsection}{\numberline {4.10.1}UC 9.1 - Filtraggio per data di creazione}{11}{subsubsection.4.10.1}%
+\contentsline {subsubsection}{\numberline {4.10.2}UC 9.2 - Filtraggio per pubblicazione}{12}{subsubsection.4.10.2}%
+\contentsline {subsubsection}{\numberline {4.10.3}UC 9.3 - Filtraggio per in "modifica"}{12}{subsubsection.4.10.3}%
 \contentsline {subsection}{\numberline {4.11}UC 10 - Aggiunta tenant}{12}{subsection.4.11}%
 \contentsline {subsubsection}{\numberline {4.11.1}UC 10.1 - Inserimento nome tenant}{12}{subsubsection.4.11.1}%
-\contentsline {subsubsection}{\numberline {4.11.2}UC 10.2 - Inserimento numero traduzioni disponibili}{12}{subsubsection.4.11.2}%
-\contentsline {subsubsection}{\numberline {4.11.3}UC 10.3 - Inserimento le lingue disponibili nel nuovo tenant}{13}{subsubsection.4.11.3}%
-\contentsline {subsubsection}{\numberline {4.11.4}UC 10.4 - lingua default nella dashboard del tenant}{13}{subsubsection.4.11.4}%
+\contentsline {subsubsection}{\numberline {4.11.2}UC 10.2 - Inserimento numero traduzioni disponibili}{13}{subsubsection.4.11.2}%
+\contentsline {subsubsection}{\numberline {4.11.3}UC 10.3 - Inserimento lingue disponibili}{13}{subsubsection.4.11.3}%
+\contentsline {subsubsection}{\numberline {4.11.4}UC 10.4 - Selezione lingua di default}{13}{subsubsection.4.11.4}%
 \contentsline {subsection}{\numberline {4.12}UC 11 Aggiunta lingua tenant}{13}{subsection.4.12}%
-\contentsline {subsection}{\numberline {4.13}UC 12 - Eliminazione tenant}{13}{subsection.4.13}%
+\contentsline {subsection}{\numberline {4.13}UC 12 - Eliminazione tenant}{14}{subsection.4.13}%
 \contentsline {subsection}{\numberline {4.14}UC 13 - Ricerca traduzione da libreria client}{14}{subsection.4.14}%
-\contentsline {section}{\numberline {5}Requisiti}{14}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Requisiti funzionali}{15}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Requisiti di vincolo}{17}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Requisiti di qualità}{17}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Requisiti prestazionali}{17}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Tracciamento requisiti}{17}{subsection.5.5}%
+\contentsline {subsection}{\numberline {4.15}UCE 1 - Visualizzazione messaggio d'errore nel caso: campo di testo obbligatorio non riempito}{14}{subsection.4.15}%
+\contentsline {subsection}{\numberline {4.16}UCE 2 - Visualizzazione messaggio d'errore nel caso: password inserita non conforme agli standard di sicurezza minimi}{15}{subsection.4.16}%
+\contentsline {subsection}{\numberline {4.17}UCE 3 - Visualizzazione messaggio d'errore nel caso: nella conferma della password non c'è corrispondenza}{15}{subsection.4.17}%
+\contentsline {subsection}{\numberline {4.18}UCE 4 - Visualizzazione messaggio d'errore nel caso: indirizzo email già presente nel sistema in fase di registrazione}{15}{subsection.4.18}%
+\contentsline {subsection}{\numberline {4.19}UCE 5 - Visualizzazione messaggio d'errore nel caso: account non presente nel sistema}{15}{subsection.4.19}%
+\contentsline {subsection}{\numberline {4.20}UCE 6 - Visualizzazione messaggio d'errore nel caso: in fase di cambio password la passoword da inserire per confermare l'identità è sbagliata}{16}{subsection.4.20}%
+\contentsline {subsection}{\numberline {4.21}UCE 7 - Visualizzazione messaggio d'errore nel caso: nell'inserimento di una traduzione l'utente non inserisce almeno due lingue diverse}{16}{subsection.4.21}%
+\contentsline {subsection}{\numberline {4.22}UCE 8 - Visualizzazione messaggio d'errore nel caso: nell'inserimento del numero di traduzioni disponibili l'utente inserisce un numero non corretto}{16}{subsection.4.22}%
+\contentsline {subsection}{\numberline {4.23}UCE 9 - Visualizzazione messaggio d'errore nel caso: nell'inserimento di un nuovo tenant l'utente non inserisce almeno due lingue}{16}{subsection.4.23}%
+\contentsline {subsection}{\numberline {4.24}UCE 10 - Visualizzazione messaggio d'errore nel caso: inserimento doppio di una lingua in un tenant}{17}{subsection.4.24}%
+\contentsline {section}{\numberline {5}Requisiti}{17}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Requisiti funzionali}{18}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Requisiti di vincolo}{20}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Requisiti di qualità}{20}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Requisiti prestazionali}{20}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Tracciamento requisiti}{20}{subsection.5.5}%

@@ -32,7 +32,8 @@ In questa sezione verranno presentati gli use cases tracciati, che il software d
                 \item Scenario principale: l'utente inserisce l'indirizzo email per effettuare la registrazione.
                 \item Estensioni:
                     \begin{itemize}
-                        \item Se l'indirizzo email è già nel sistema viene visualizzato un messaggio d'errore e la registrazione non viene eseguita.
+                        \item se l'indirizzo email è già nel sistema viene visualizzato un messaggio d'errore e la registrazione non viene eseguita [UCE 4].
+                        \item se l'indirizzo email risulta una stringa vuota viene visualizzato un messaggio d'errore e la registrazione non viene eseguita [UCE 1].
                     \end{itemize}
             \end{itemize}
         \paragraph{UC 1.1.2 - Inserimento cognome}
@@ -43,7 +44,7 @@ In questa sezione verranno presentati gli use cases tracciati, che il software d
                 \item Scenario principale: l'utente inserisce il cognome per effettuare la registrazione.
                 \item Estensioni:
                     \begin{itemize}
-                        \item Se il cognome risulta una stringa vuota viene visualizzato un messaggio d'errore e la registrazione non viene eseguita.
+                        \item Se il cognome risulta una stringa vuota viene visualizzato un messaggio d'errore e la registrazione non viene eseguita [UCE 1].
                     \end{itemize}
             \end{itemize}
         \paragraph{UC 1.1.3 - Inserire nome}
@@ -54,7 +55,7 @@ In questa sezione verranno presentati gli use cases tracciati, che il software d
                 \item Scenario principale: l'utente inserisce il nome per effettuare la registrazione.
                 \item Estensioni:
                     \begin{itemize}
-                        \item Se il nome risulta una stringa vuota viene visualizzato un messaggio d'errore e la registrazione non viene eseguita.
+                        \item se il nome risulta una stringa vuota viene visualizzato un messaggio d'errore e la registrazione non viene eseguita [UCE 1].
                     \end{itemize}
             \end{itemize}
         \paragraph{UC 1.1.4 - Inserimento password}
@@ -65,7 +66,8 @@ In questa sezione verranno presentati gli use cases tracciati, che il software d
                 \item Scenario principale: l'utente inserisce una password per effettuare la registrazione.
                 \item Estensioni:
                     \begin{itemize}
-                        \item Se la password non risulta conforme agli standard di sicurezza viene visualizzato un messaggio d'errore e la registrazione non viene eseguita.
+                        \item se la password non risulta conforme agli standard di sicurezza viene visualizzato un messaggio d'errore e la registrazione non viene eseguita [UCE 2].
+                        \item se la password risulta una stringa vuota viene visualizzato un messaggio d'errore e la registrazione non viene eseguita [UCE 1].
                     \end{itemize}
             \end{itemize}
         \paragraph{UC 1.1.5 - Reinserimento password}
@@ -76,7 +78,7 @@ In questa sezione verranno presentati gli use cases tracciati, che il software d
                 \item Scenario principale: l'utente reinserisce la password inserita in [UC 1.1.4] per effettuare la registrazione.
                 \item Estensioni:
                     \begin{itemize}
-                        \item Se la password non è uguale a quella inserita in [UC 1.1.4] viene visualizzato un messaggio d'errore e la registrazione non viene eseguita.
+                        \item se la password non è uguale a quella inserita in [UC 1.1.4] viene visualizzato un messaggio d'errore e la registrazione non viene eseguita [UCE 3].
                     \end{itemize}
             \end{itemize}
     \subsubsection{UC 1.2 - Autenticazione}
@@ -93,7 +95,7 @@ In questa sezione verranno presentati gli use cases tracciati, che il software d
                 \end{enumerate}
             \item Estensioni:
                 \begin{itemize}
-                    \item se la coppia email-password non è presente nel sistema l'autenticazione fallisce e viene visualizzato un messaggio d'errore.
+                    \item se la coppia email-password non è presente nel sistema l'autenticazione fallisce e viene visualizzato un messaggio d'errore [UCE 5].
                 \end{itemize}
         \end{itemize}
         \paragraph{UC 1.2.1 - Inserimento indirizzo email}
@@ -102,6 +104,10 @@ In questa sezione verranno presentati gli use cases tracciati, che il software d
                 \item Precondizione: l'utente non è autenticato.
                 \item Postcondizione: l'utente ha inserito l'indirizzo email.
                 \item Scenario principale: l'utente inserisce l'indirizzo email per autenticarsi.
+                \item Estensioni:
+                    \begin{itemize}
+                        \item se l'indirizzo email risulta una stringa vuota viene visualizzato un messaggio d'errore e l'autenticazione fallisce [UCE 1].
+                    \end{itemize}
             \end{itemize}
         \paragraph{UC 1.2.2 - Inserimento password}
             \begin{itemize}
@@ -109,6 +115,10 @@ In questa sezione verranno presentati gli use cases tracciati, che il software d
                 \item Precondizione: l'utente non è autenticato.
                 \item Postcondizione: l'utente ha inserito la password.
                 \item Scenario principale: l'utente inserisce la password per autenticarsi.
+                \item Estensioni:
+                    \begin{itemize}
+                        \item se la password risulta una stringa vuota viene visualizzato un messaggio d'errore e l'autenticazione fallisce [UCE 1].
+                    \end{itemize}
             \end{itemize}
     \subsubsection{UC 1.3 - Password dimenticata}
         \begin{itemize}
@@ -123,10 +133,6 @@ In questa sezione verranno presentati gli use cases tracciati, che il software d
                     \item L'utente inserisce una nuova password.
                     \item L'utente reinserisce la nuova password per confermarla.
                 \end{enumerate}
-            \item Estensioni:
-                \begin{itemize}
-                    \item Se l'utente inserisce un'indirizzo email non presente nel sistema non riceverà nessuna email.
-                \end{itemize}
         \end{itemize}
         \paragraph{UC 1.3.1 - Inserimento indirizzo email per il reset}
             \begin{itemize}
@@ -134,6 +140,11 @@ In questa sezione verranno presentati gli use cases tracciati, che il software d
                 \item Precondizione: l'utente non è autenticato.
                 \item Postcondizione: l'utente ha inserito l'indirizzo email per il reset.
                 \item Scenario principale: l'utente inserisce l'indirizzo email per farsi mandare il link di cambio password.
+                \item Estensioni:
+                    \begin{itemize}
+                        \item se l'indirizzo email risulta una stringa vuota viene visualizzato un messaggio d'errore e la mail non viene inviata [UCE 1].
+                        \item se l'utente inserisce un'indirizzo email non presente nel sistema non riceverà nessuna email.
+                    \end{itemize}
             \end{itemize}
         \paragraph{UC 1.3.2 - Inserimento nuova password}
             \begin{itemize}
@@ -143,7 +154,8 @@ In questa sezione verranno presentati gli use cases tracciati, che il software d
                 \item Scenario principale: l'utente inserisce la password nella pagina corrispondente al link arrivato via mail.
                 \item Estensioni:
                     \begin{itemize}
-                        \item Se la password non risulta conforme agli standard di sicurezza viene visualizzato un messaggio d'errore e il reset non viene eseguito.
+                        \item se la password non risulta conforme agli standard di sicurezza viene visualizzato un messaggio d'errore e il reset non viene eseguito [UCE 2].
+                        \item se la password risulta una stringa vuota viene visualizzato un messaggio d'errore e il cambio password non viene eseguito [UCE 1].
                     \end{itemize}
             \end{itemize}
         \paragraph{UC 1.3.3 - Reinserimento password}
@@ -154,7 +166,7 @@ In questa sezione verranno presentati gli use cases tracciati, che il software d
                 \item Scenario principale: l'utente reinserisce la password nella pagina corrispondente al link arrivato via mail.
                 \item Estensioni:
                     \begin{itemize}
-                        \item Se la password non è uguale a quella inserita in [UC 1.3.2] viene visualizzato un messaggio d'errore e il reset non viene eseguito.
+                        \item se la password non è uguale a quella inserita in [UC 1.3.2] viene visualizzato un messaggio d'errore e il reset non viene eseguito [UCE 3].
                     \end{itemize}
             \end{itemize}
 \subsection{UC 2 - Area personale}
@@ -197,7 +209,8 @@ In questa sezione verranno presentati gli use cases tracciati, che il software d
                 \item Scenario principale: inserimento vecchia password per modificarla.
                 \item Estensioni:
                     \begin{itemize}
-                        \item se la password è sbagliata viene visualizzato un messaggio d'errore.
+                        \item se la password è sbagliata viene visualizzato un messaggio d'errore [UCE 6].
+                        \item se la password risulta una stringa vuota viene visualizzato un messaggio d'errore e il cambio password non viene eseguito [UCE 1].
                     \end{itemize}
             \end{itemize}
         \paragraph{UC 2.2.2 - Inserimento password nuova}
@@ -208,7 +221,8 @@ In questa sezione verranno presentati gli use cases tracciati, che il software d
                 \item Scenario principale: inserimento nuova password.
                 \item Estensioni:
                     \begin{itemize}
-                        \item se la password non è conforme agli standard di sicurezza viene visualizzato un messaggio d'errore.
+                        \item se la password non è conforme agli standard di sicurezza viene visualizzato un messaggio d'errore [UCE 2].
+                        \item se la password risulta una stringa vuota viene visualizzato un messaggio d'errore e il cambio password non viene eseguito [UCE 1].
                     \end{itemize}
             \end{itemize}
         \paragraph{UC 2.2.3 - Conferma password}
@@ -219,7 +233,7 @@ In questa sezione verranno presentati gli use cases tracciati, che il software d
                 \item Scenario principale: conferma nuova password per evitare errori.
                 \item Estensioni:
                     \begin{itemize}
-                        \item se la password non è uguale a quella inserita in precedenza viene visualizzato un messaggio d'errore.
+                        \item se la password non è uguale a quella inserita in precedenza viene visualizzato un messaggio d'errore [UCE 3].
                     \end{itemize}
             \end{itemize}
 \subsection{UC 3 - Inserimento nuova traduzione}
@@ -232,12 +246,12 @@ In questa sezione verranno presentati gli use cases tracciati, che il software d
             \begin{enumerate}
                 \item L'utente seleziona il progetto.
                 \item L'utente clicca sul pulsante "Nuova traduzione".
-                \item L'utente scrive la frase/parola da tradurre.
+                \item L'utente scrive la frase/parola da tradurre e la relativa traduzione.
                 \item L'utente clicca sul pulsante "Salva".
             \end{enumerate}
         \item Estensioni:
             \begin{itemize}
-                \item L'utente deve aver inserito almeno una traduzione in una lingua tra quelle disponibili.
+                \item se l'utente non inserisce almeno traduzioni in due lingue diverse viene visualizzato un messaggio d'errore e la creazione fallisce [UCE 7].
             \end{itemize}
     \end{itemize}
 \subsection{UC 4 - Revisione traduzione}
@@ -302,17 +316,17 @@ In questa sezione verranno presentati gli use cases tracciati, che il software d
 \subsection{UC 7 - Versionamento}
     \begin{itemize}
         \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
-        \item Precondizione: l'utente vuole visualizzare l'ultima modifica di una traduzione e quale utente l'ha effetuata e quando.
-        \item Postcondizione: l'utente visualizza l'ultima modifica di una traduzione e quale utente l'ha effetuata e quando.
+        \item Precondizione: l'utente vuole visualizzare le ultime N modifiche di una traduzione, quale utente le ha effetuate e quando.
+        \item Postcondizione: l'utente visualizza le ultime N modifica di una traduzione, quale utente le ha effetuate e quando.
         \item Scenario principale: l'utente ha visualizzato il versionamento.
-        \item \item Flusso di eventi:
+        \item Flusso di eventi:
         \begin{enumerate}
-            \item L'utente seleziona la traduzione sulla quale vuole visualizzare le informazioni sull'ultima modifica.
-            \item L'utente clicca sul tasto "Ultima modifica".
-            \item Vengono visualizzate le informazioni sull'ultima modifica.
+            \item L'utente seleziona la traduzione sulla quale vuole visualizzare le informazioni sulle ultime modifiche.
+            \item L'utente clicca sul tasto "Ultime modifiche".
+            \item Vengono visualizzate le informazioni sulle ultime modifiche.
         \end{enumerate}
     \end{itemize}   
-\subsection{UC 7 - Ricerca}
+\subsection{UC 8 - Ricerca}
     \begin{itemize}
         \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
         \item Precondizione: l'utente all'interno di un progetto ha necessità di ricercare una traduzione.
@@ -329,21 +343,21 @@ In questa sezione verranno presentati gli use cases tracciati, che il software d
                     \item L'utente ricerca per parola [UC 7.2].
                 \end{enumerate}
     \end{itemize}
-    \subsubsection{UC 7.1 - Ricerca per id univoco}%??????
+    \subsubsection{UC 8.1 - Ricerca per id univoco}%??????
         \begin{itemize}
             \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
             \item Precondizione: l'utente ha necessità trovare una traduzione con l'id.
             \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano l'id anche parzialmente inserito.%????
             \item Scenario principale: l'utente inserisce nel campo di ricerca l'id univoco.
         \end{itemize}
-    \subsubsection{UC 7.1 - Ricerca per parola}
+    \subsubsection{UC 8.2 - Ricerca per parola}
         \begin{itemize}
             \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
             \item Precondizione: l'utente ha necessità trovare una traduzione data una o più parole.
             \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano le parole inserite.
             \item Scenario principale: l'utente inserisce nel campo di ricerca l'id univoco.
         \end{itemize}
-\subsection{UC 8 - Filtraggio ricerca}%%nice to have
+\subsection{UC 9 - Filtraggio ricerca} %! nice to have
     \begin{itemize}
         \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
         \item Precondizione: l'utente ha necessità di filtrare la ricerca effettuata.
@@ -356,21 +370,21 @@ In questa sezione verranno presentati gli use cases tracciati, che il software d
                 \item Filtraggio per in "modifica" [UC 8.3]
             \end{itemize}
     \end{itemize}  
-    \subsubsection{UC 8.1 - Filtraggio per data di creazione}
+    \subsubsection{UC 9.1 - Filtraggio per data di creazione}
         \begin{itemize}
             \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
             \item Precondizione: l'utente ha necessità di filtrare la ricerca effettuata per la data di creazione.
             \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano la data di creazione precedentemente selezionata. 
             \item Scenario principale: l'utente deve selezionare la data di creazione per eseguire la ricerca filtrata.
         \end{itemize}
-    \subsubsection{UC 8.2 - Filtraggio per pubblicazione}
+    \subsubsection{UC 9.2 - Filtraggio per pubblicazione}
         \begin{itemize}
             \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
             \item Precondizione: l'utente ha necessità di filtrare la ricerca effetuata per pubblicazione.
             \item Postcondizione: l'utente ha come risultato della ricerca tutte le traduzioni che rispettano la pubblicazione precedentemente selezionata. 
             \item Scenario principale: l'utente deve selezionare lo stato della traduzione in "pubblicata" per eseguire la ricerca filtrata.
         \end{itemize}
-    \subsubsection{UC 8.3 - Filtraggio per in "modifica"}
+    \subsubsection{UC 9.3 - Filtraggio per in "modifica"}
         \begin{itemize}
             \item Attore primario: utente traduttore/utente admin/utente super admin(zero12).
             \item Precondizione: l'utente ha necessità di filtrare la ricerca effettuata per traduzioni in "modifica".
@@ -390,10 +404,6 @@ In questa sezione verranno presentati gli use cases tracciati, che il software d
             \item L'utente inserisce le lingue disponibili nel nuovo tenant [UC 10.3].
             \item L'utente sceglie quale lingua mostrare di default nella dashboard del tenant [UC 10.4].
         \end{enumerate}
-        \item Estensioni:
-            \begin{itemize}
-                \item La lingua di default da mostrare nella dashboard deve essere contenuta nelle lingue disponibili per il tenant.
-            \end{itemize}
     \end{itemize}    
     \subsubsection{UC 10.1 - Inserimento nome tenant}
         \begin{itemize}
@@ -403,7 +413,7 @@ In questa sezione verranno presentati gli use cases tracciati, che il software d
             \item Scenario principale: l'utente inserisce il nome del tenant.
             \item Estensioni: 
                 \begin{itemize}
-                    \item l'utente deve inserire obbligatoriamente il nome del tenant univoco con almeno un carattere altrimenti viene visualizzato un messaggio d'errore.
+                    \item l'utente deve inserire obbligatoriamente il nome del tenant univoco con almeno un carattere altrimenti viene visualizzato un messaggio d'errore e la creazione fallisce [UCE 1].
                 \end{itemize}
         \end{itemize}
     \subsubsection{UC 10.2 - Inserimento numero traduzioni disponibili}
@@ -414,10 +424,10 @@ In questa sezione verranno presentati gli use cases tracciati, che il software d
             \item Scenario principale: l'utente inscerisce il numero delle traduzioni a disponibilità del tenant.
             \item Estensioni: 
                 \begin{itemize}
-                    \item l'utente deve inserire obbligatoriamente il numero delle traduzioni disponibili.
+                    \item se il numero delle traduzioni disponibili inserito dall'utente è minore di 1 viene visualizzato un messaggio d'errore e la creazione del tenant fallisce [UCE 8].
                 \end{itemize}
         \end{itemize}
-        \subsubsection{UC 10.3 - Inserimento le lingue disponibili nel nuovo tenant}%??????????
+    \subsubsection{UC 10.3 - Inserimento lingue disponibili}
         \begin{itemize}
             \item Attore primario: utente super admin(zero12).
             \item Precondizione: l'utente ha necessità di inserire le lingue disponibili nel tenant.
@@ -425,19 +435,16 @@ In questa sezione verranno presentati gli use cases tracciati, che il software d
             \item Scenario principale: l'utente inscerisce le lingue disponibili nel tenant.
             \item Estensioni: 
                 \begin{itemize}
-                    \item l'utente deve inserire obbligatoriamente almeno due lingue.%??????????
+                    \item se l'utente non inserisce almeno due lingue viene visualzzato un messaggio d'errore e la creazione del tenant fallisce [UCE 9].
+                    \item se l'utente cerca di inserire una lingua che corrisponde a una stringa vuota viene visualizzato un messaggio d'errore e la creazione del tenant fallisce [UCE 1].
                 \end{itemize}
         \end{itemize}
-        \subsubsection{UC 10.4 - lingua default nella dashboard del tenant}
+    \subsubsection{UC 10.4 - Selezione lingua di default}
         \begin{itemize}
             \item Attore primario: utente super admin(zero12).
-            \item Precondizione: l'utente ha necessità di inserire la lingua di default nella dashboard del tenant.
-            \item Postcondizione: l'utente ha inserito la lingua di default nella dashboard del tenant.
-            \item Scenario principale: l'utente inscerisce la lingua di default nella dashboard del tenant.
-            \item Estensioni: 
-                \begin{itemize}
-                    \item l'utente deve inserire obbligatoriamente la lingua tra quelle disponibili nel tenant.
-                \end{itemize}
+            \item Precondizione: l'utente ha necessità di selezionare la lingua di default da visualizzare nella dashboard del tenant.
+            \item Postcondizione: l'utente ha selezionato tra le lingue disponibili [UC 10.3] la lingua di default nella dashboard del tenant.
+            \item Scenario principale: l'utente seleziona la lingua di default da visualizzare nella dashboard del tenant.
         \end{itemize}
 \subsection{UC 11 Aggiunta lingua tenant}
     \begin{itemize}
@@ -450,29 +457,101 @@ In questa sezione verranno presentati gli use cases tracciati, che il software d
                 \item L'utente scrive nel campo di testo la nuova lingua.
                 \item L'utente clicca su "Salva".
             \end{itemize}
+        \item Estensioni:
+            \begin{itemize}
+                \item se l'utente lascia il campo della lingua vuoto viene visualizzato un messaggio d'errore e la nuova lingua non viene inserita [UCE 1].
+                \item se la lingua è già presente nel tenant viene visualizzato un messaggio d'errore e la lingua non viene inserita [UCE 10].
+            \end{itemize}
         \end{itemize}
 \subsection{UC 12 - Eliminazione tenant}
     \begin{itemize}
         \item Attore primario: utente super admin(zero12).
         \item Precondizione: l'utente ha necessità di eliminare un tenant.
         \item Postcondizione: l'utente ha eliminato il tenant.
-        \item Scenario principale: l'utente inserisce il nome del tenant.
-        \item Estensioni: 
-        \begin{itemize}
-            \item L'utente deve inserire obbligatoriamente un nome di un tenant valido(presente nella lista dei tenant) altrimenti viene visualizzato un messaggio d'errore.
-        \end{itemize}
+        \item Scenario principale: l'utente trova il tenant e lo elimina.
+        \item Flusso di eventi:
+            \begin{enumerate}
+                \item l'utente visualizza la schermata dei tenant.
+                \item l'utente trova quello che vuole eliminare.
+                \item l'utente clicca sul pulsante "Elimina".
+            \end{enumerate}
     \end{itemize}
 \subsection{UC 13 - Ricerca traduzione da libreria client}
     \begin{itemize}
         \item Attore primario: libreria client.
         \item Precondizione: libreria client ha necessità di ricercare una traduzione.
         \item Postcondizione: libreria client ha ricevuto la traduzione.
-        \item Estensione: libreria client per richiedere la traduzione deve autenticarsi all'API in modo tale da ricevere solo le traduzioni a cui ha accesso.
+        \item Scenario principale: libreria client per richiedere la traduzione deve autenticarsi all'API in modo tale da ricevere solo le traduzioni a cui ha accesso.
+    \end{itemize}
+\subsection{UCE 1 - Visualizzazione messaggio d'errore nel caso: campo di testo obbligatorio non riempito}
+    \begin{itemize}
+        \item Attore primario: qualsiasi utente.
+        \item Precondizione: l'utente lascia vuoto un campo di testo che deve essere obbligatoriamente riempito.
+        \item Postcondizione: viene visualizzato un messaggio d'errore e l'operazione che doveva essere eseguita viene abortita.
+        \item Scenario principale: l'utente riceve il messaggio d'errore con l'indicazione di dove è stato, per poi poter ricompilare il campo di testo.
+    \end{itemize}
+\subsection{UCE 2 - Visualizzazione messaggio d'errore nel caso: password inserita non conforme agli standard di sicurezza minimi}
+    \begin{itemize}
+        \item Attore primario: qualsiasi utente.
+        \item Precondizione: l'utente inserisce una password che non è conforme agli standard di sicurezza minimi richiesti dal sistema.
+        \item Postcondizione: viene visualizzato un messaggio d'errore e l'operazione che doveva essere eseguita viene abortita.
+        \item Scenario principale: l'utente riceve il messaggio d'errore con la spiegazione dei requisiti della password, in modo da poter inserire una password adatta.
+    \end{itemize}
+\subsection{UCE 3 - Visualizzazione messaggio d'errore nel caso: nella conferma della password non c'è corrispondenza}
+    \begin{itemize}
+        \item Attore primario: qualsiasi utente.
+        \item Precondizione: nel reinserimento di sicurezza della password l'utente inserisce una password che è diversa da quella precedente.
+        \item Postcondizione: viene visualizzato un messaggio d'errore e la creazione/cambio password viene abortita.
+        \item Scenario principale: l'utente riceve il messaggio d'errore che spiega cosa è successo e si da la possibilità all'utente di completare di nuovo il form.
+    \end{itemize}
+\subsection{UCE 4 - Visualizzazione messaggio d'errore nel caso: indirizzo email già presente nel sistema in fase di registrazione}
+    \begin{itemize}
+        \item Attore primario: qualsiasi utente.
+        \item Precondizione: durante la registrazione viene inserito un indirizzo email già presente nel sistema.
+        \item Postcondizione: viene visualizzato un messaggio d'errore e la creazione dell'utente viene abortita.
+        \item Scenario principale: l'utente riceve il messaggio d'errore che avvisa del problema e si da la possibilità all'utente di completare di nuovo il form di registrazione.
+    \end{itemize}
+\subsection{UCE 5 - Visualizzazione messaggio d'errore nel caso: account non presente nel sistema}
+    \begin{itemize}
+        \item Attore primario: qualsiasi utente.
+        \item Precondizione: l'utente prova ad autenticarsi con delle credenziali non presenti nel sistema.
+        \item Postcondizione: viene visualizzato un messaggio d'errore e l'utente non viene autenticato.
+        \item Scenario principale: l'utente riceve il messaggio d'errore e gli viene data la possibilità di riprovare.
+    \end{itemize}
+\subsection{UCE 6 - Visualizzazione messaggio d'errore nel caso: in fase di cambio password la passoword da inserire per confermare l'identità è sbagliata}
+    \begin{itemize}
+        \item Attore primario: qualsiasi utente.
+        \item Precondizione: l'utente inserisce una password sbagliata provando a confermare la sua identità per cambiare password.
+        \item Postcondizione: viene visualizzato un messaggio d'errore, il cambio password non viene eseguito.
+        \item Scenario principale: l'utente riceve il messaggio d'errore e ottiene una nuova possibilità di cambiare la password.
+    \end{itemize}
+\subsection{UCE 7 - Visualizzazione messaggio d'errore nel caso: nell'inserimento di una traduzione l'utente non inserisce almeno due lingue diverse}
+    \begin{itemize}
+        \item Attore primario: qualsiasi utente.
+        \item Precondizione: durante la fase di inserimento di una traduzione l'utente ha inserito l'espressione/parola in una sola o in nessuna lingua.
+        \item Postcondizione: viene visualizzato un messaggio d'errore che avvisa che bisogna inserire l'espressione/parola in almeno due lingue e l'inserimento non viene completato.
+        \item Scenario principale: l'utente riceve il messaggio d'errore e può ricompilare il form d'inserimento della traduzione.
+    \end{itemize}
+\subsection{UCE 8 - Visualizzazione messaggio d'errore nel caso: nell'inserimento del numero di traduzioni disponibili l'utente inserisce un numero non corretto}
+    \begin{itemize}
+        \item Attore primario: utente super admin(zero12).
+        \item Precondizione: l'utente in fase di creazione di un nuovo tenant inserisce un numero di traduzioni minore o uguale a 0.
+        \item Postcondizione: la creazione del tenant fallisce e viene visualizzato un messaggio d'errore.
+        \item Scenario principale: l'utente riceve il messaggio d'errore e ha la possibilità di ricompilare il form.
+    \end{itemize}
+\subsection{UCE 9 - Visualizzazione messaggio d'errore nel caso: nell'inserimento di un nuovo tenant l'utente non inserisce almeno due lingue}
+    \begin{itemize}
+        \item Attore primario: utente super admin(zero12).
+        \item Precondizione: l'utente in fase di inserimento di un nuovo tenant inserisce meno di due lingue.
+        \item Postcondizione: viene visualizzato un messaggio d'errore, l'inserimento del nuovo tenant fallisce.
+        \item Scenario principale: l'utente riceve il messaggio d'errore e ottiene una nuova possibilità di compilare il form.
+    \end{itemize}
+\subsection{UCE 10 - Visualizzazione messaggio d'errore nel caso: inserimento doppio di una lingua in un tenant}
+    \begin{itemize}
+        \item Attore primario: qualsiasi utente.
+        \item Precondizione: l'utente inserisce una lingua già presente nel tenant.
+        \item Postcondizione: viene visualizzato un messaggio d'errore, non viene aggiunta nessuna lingua.
+        \item Scenario principale: l'utente riceve il messaggio d'errore e ha la possibilità di poter reinserire il nome della lingua.
     \end{itemize}
 
-%! GESTIONE DEI PROGETTI
-%! MESSAGGI D'ERRORE
-
-%! CHIEDERE PER RICERCA TRAMITE ID O SE BISOGNA ANCHE FARE LA RICERCA IN TUTTE LE COLONNE DELLA TABELLA
-%! ZERO12 PUO' VEDERE MOFICARE CREARE LE TRADUZIONI ECC O SOLO CREARE I TENANT
 %! UTENTI SECONDARI 
